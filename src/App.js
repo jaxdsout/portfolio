@@ -3,12 +3,20 @@ import {ReactComponent as GitHub} from './components/github.svg'
 import {ReactComponent as Email} from './components/email.svg'
 import {ReactComponent as Repo} from "./components/code.svg"
 import {ReactComponent as LiveLink} from "./components/link.svg"
+import {ReactComponent as Resume} from "./components/resume.svg"
+
  
 import { Link } from 'react-router-dom';
 import "./App.css"
 
 
 function App() {
+
+  const ShowDescription = (event) => {
+    event.preventDefault();
+    
+  }
+
   return (
     <div className='container'>
 
@@ -29,7 +37,7 @@ function App() {
             <div className="accordion-body">
               <div className="row d-flex align-items-end my-2 overflow-x-auto">
                 <div className='col'>
-                  <img src="/images/gallery.png" className='rounded img-fluid' alt='img'></img>
+                  <img onClick={ShowDescription} src="/images/gallery.png" className='rounded img-fluid' alt='img'></img>
                   <div className='d-flex justify-content-between mt-3 align-items-center'>
                   <h3 className='raleway-medium text-center title'> the gallery </h3>
                     <div>
@@ -45,6 +53,7 @@ function App() {
                   <div className='d-flex justify-content-between mt-3 align-items-center'>
                     <h3 className='raleway-medium text-center title'> substream</h3>
                     <div>
+                      
                       <Link to="https://github.com/jaxdsout/substream" target="_blank" rel="noopener noreferrer"> 
                       <Repo className='sub-icon'/>
                     </Link>
@@ -96,7 +105,17 @@ function App() {
           </h2>
           <div id="flush-collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
+              <div>
               <p> a little blurb about me and my story. </p>
+
+              </div>
+              <div>
+              <Link to="/images/JaxonSouthernResume.pdf" target="_blank" rel="noopener noreferrer"> 
+              <Resume className='icon'/>
+                    </Link>
+                <p>Resume</p>
+
+              </div>
             </div>
           </div>
         </div>
