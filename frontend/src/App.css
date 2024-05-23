@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(222, 162, 11);
+}
+
+
+/* FONTS & TEXT */
+
+.raleway-regular {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .2rem;
+}
+
+.raleway-medium {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .2rem;
+}
+
+.raleway-heavy {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: .5rem;
+}
+
+.jersey-25-charted-regular {
+    font-family: "Jersey 25 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    font-size: 4rem;
+    user-select: none;
+}
+
+.author {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    user-select: none;
+    margin-top: -1rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    flex-wrap: nowrap !important
+}
+
+
+/* ICONS */
+
+.icon {
+    transform: scale(2.5);
+    margin-right: 3rem;
+    fill:black
+}
+
+.sub-icon {
+    transform: scale(1.1);
+    fill: black;
+    flex-wrap: nowrap !important;
+    margin-right: 1rem;
+}
+
+
+.icon:hover, .sub-icon:hover {
+    fill: rgb(222, 162, 11);
+}
+
+
+/* ACCORDION */
+
+.accordion-body {
+    border: .5rem solid rgb(244, 244, 244);
+    border-top: none;
+}
+
+.accordion-button:hover {
+    background-color: rgb(231, 231, 231) !important;
+}
+
+.accordion-body::after {
+    background-color: white !important;
+}
+
+.accordion-button:focus, .accordion-body:active {
+    background-color: rgb(244, 244, 244)!important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+
+
