@@ -74,6 +74,10 @@ body {
     fill: rgb(222, 162, 11);
 }
 
+.resume {
+    margin-right: 1rem;
+}
+
 
 /* ACCORDION */
 
@@ -95,6 +99,43 @@ body {
     box-shadow: none !important;
     outline: none !important;
 }
+
+
+.thumbnail-container {
+    position: relative;
+    display: inline-block;
+}
+
+.thumbnail-container img {
+    display: block;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-container:hover img {
+    opacity: 0.5;
+}
+
+.thumbnail-container .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(244, 244, 244, 0.79);
+    transition: opacity 0.3s ease;
+    border: 2rem solid auto;
+}
+
+.thumbnail-container:hover .description {
+    opacity: 1;
+
+}
+
 
 
 

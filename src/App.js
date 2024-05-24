@@ -7,8 +7,8 @@ import {ReactComponent as Resume} from "./components/resume.svg"
 
 import { Routes, Route } from 'react-router-dom';
 
-import Header from './partials/Header'
-import Accordion from './partials/Accordion'
+import Header from './elements/Header'
+import Accordion from './elements/Accordion'
 
 import "./App.css"
 
