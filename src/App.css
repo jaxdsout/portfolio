@@ -53,12 +53,13 @@ body {
 }
 
 
+
 /* ICONS */
 
 .icon {
     transform: scale(2.5);
-    margin-right: 3rem;
-    fill:black
+    margin: .5rem 3rem 0.5rem 0rem;
+    fill:black;
 }
 
 .sub-icon {

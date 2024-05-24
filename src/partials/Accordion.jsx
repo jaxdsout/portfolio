@@ -86,10 +86,10 @@ function Accordion({ Repo, LiveLink, Resume, Email, LinkedIn, GitHub }) {
               <p> a little blurb about me and my story. </p>
 
               </div>
-              <div>
-              <Link to="/images/JaxonSouthernResume.pdf" target="_blank" rel="noopener noreferrer"> 
-              <Resume className='icon'/>
-                    </Link>
+              <div className="text-center d-flex">
+                <Link to="/images/JaxonSouthernResume.pdf" target="_blank" rel="noopener noreferrer"> 
+                    <Resume className='icon'/>
+                </Link>
                 <p>Resume</p>
 
               </div>
