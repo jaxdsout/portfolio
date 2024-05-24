@@ -5,7 +5,7 @@ import Contact from "./Contact"
 
 function Accordion({ Repo, LiveLink, Resume, Email, LinkedIn, GitHub }) {
   return (
-    <div className="accordion accordion-flush" id="accordionFlushExample">
+    <div className="accordion accordion-flush " id="accordionFlushExample">
         
         <div className="accordion-item">
             <h2 className="accordion-header">
