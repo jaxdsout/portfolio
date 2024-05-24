@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://jaxdsout.github.io/portfolio/",
+  "homepage": "https://jaxdsout.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@floating-ui/react": "^0.26.16",

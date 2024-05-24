@@ -5,7 +5,7 @@ import {ReactComponent as Repo} from "./components/code.svg"
 import {ReactComponent as LiveLink} from "./components/link.svg"
 import {ReactComponent as Resume} from "./components/resume.svg"
 
-import { Routes, Route } from 'react-router-dom';
+// import { Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './elements/Header'
 import Accordion from './elements/Accordion'
@@ -13,21 +13,18 @@ import Accordion from './elements/Accordion'
 import "./App.css"
 
 function App() {
+
   return (
     <div className='container'>
       <Header />
-      <Routes>
-        <Route path="/" element={
-          <Accordion 
-            LinkedIn={LinkedIn}
-            LiveLink={LiveLink}
-            Repo={Repo}
-            Resume={Resume}
-            GitHub={GitHub}
-            Email={Email}
-          />
-        }/>
-      </Routes>
+      <Accordion 
+        LinkedIn={LinkedIn}
+        LiveLink={LiveLink}
+        Repo={Repo}
+        Resume={Resume}
+        GitHub={GitHub}
+        Email={Email}
+      />
     </div>
   );
 }
