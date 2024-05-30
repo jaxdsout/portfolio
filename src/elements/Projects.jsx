@@ -22,7 +22,10 @@ function Projects ({ LiveLink, Repo }) {
             <div>
               <Link to="https://github.com/jaxdsout/gallery-site" target="_blank" rel="noopener noreferrer"> 
               <Repo className='sub-icon'/>
-            </Link>
+              </Link>
+              <Link to="https://jaxdsout.github.io/gallery-site/" target="_blank" rel="noopener noreferrer"> 
+                <LiveLink className='sub-icon'/>
+              </Link>
             </div>
           </div>
         </div>
@@ -57,6 +60,9 @@ function Projects ({ LiveLink, Repo }) {
             <div>
               <Link to="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer"> 
                 <Repo className='sub-icon'/>
+              </Link>
+              <Link to="https://qwiklok-c30005c6179d.herokuapp.com/" target="_blank" rel="noopener noreferrer"> 
+                <LiveLink className='sub-icon'/>
               </Link>
             </div>
           </div>
