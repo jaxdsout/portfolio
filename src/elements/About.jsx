@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import resume from "../components/resume.svg"
 
 
 import ResumePDF from "../images/JaxonSouthernResume.pdf"
 
-function About ({ Resume }) {
+function About () {
 
     return (
         <div className="text-center justify-content-center">
@@ -13,7 +14,7 @@ function About ({ Resume }) {
             </div>
             <div className="d-flex align-items-center justify-content-center">
                 <Link to={ResumePDF} target="_blank" rel="noopener noreferrer"> 
-                    <Resume className='icon resume'/>
+                    <img src={resume} alt="resume-logo" className="resume" />
                 </Link>
                 <p className="mt-3">Resume</p>
             </div>

@@ -3,7 +3,7 @@ import Projects from "./Projects"
 import About from "./About"
 import Contact from "./Contact"
 
-function Accordion({ Repo, LiveLink, Resume, Email, LinkedIn, GitHub }) {
+function Accordion() {
   return (
     <div className="accordion accordion-flush " id="accordionFlushExample">
         
@@ -20,10 +20,7 @@ function Accordion({ Repo, LiveLink, Resume, Email, LinkedIn, GitHub }) {
             </h2>
             <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body">
-                    <Projects 
-                        LiveLink={LiveLink}
-                        Repo={Repo}
-                    />
+                    <Projects />
                 </div>
             </div>
         </div>
@@ -41,9 +38,7 @@ function Accordion({ Repo, LiveLink, Resume, Email, LinkedIn, GitHub }) {
             </h2>
             <div id="flush-collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body">
-                    <About
-                        Resume={Resume}
-                    />
+                    <About />
                 </div>
           </div>
         </div>
@@ -60,11 +55,7 @@ function Accordion({ Repo, LiveLink, Resume, Email, LinkedIn, GitHub }) {
              </h2>
             <div id="flush-collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body">
-                    <Contact 
-                        GitHub={GitHub}
-                        LinkedIn={LinkedIn}
-                        Email={Email}
-                    />
+                    <Contact />
                 </div>
             </div>
         </div>
