@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5aaf3a47.css",
-    "main.js": "/portfolio/static/js/main.9c1a1d4a.js",
+    "main.css": "/portfolio/static/css/main.b14fc887.css",
+    "main.js": "/portfolio/static/js/main.15f3ee15.js",
     "static/js/453.8ab44547.chunk.js": "/portfolio/static/js/453.8ab44547.chunk.js",
     "static/media/substream.png": "/portfolio/static/media/substream.9469839bba9f1fe72971.png",
     "static/media/qwiklok.png": "/portfolio/static/media/qwiklok.cb5fc2aac89501f58ad9.png",
@@ -9,18 +9,19 @@
     "static/media/simon.png": "/portfolio/static/media/simon.040d6d4c3a0dbed2fc93.png",
     "static/media/JaxonSouthernResume.pdf": "/portfolio/static/media/JaxonSouthernResume.77769ea7f5a27ebb702e.pdf",
     "index.html": "/portfolio/index.html",
+    "static/media/background.svg": "/portfolio/static/media/background.8050be1dcb46747aec67e3e7afb184b1.svg",
     "static/media/github.svg": "/portfolio/static/media/github.0472e7ebc3457f4d1377bcab7a3f8b2b.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.1d427cc8e8b27288187de32bcb41a70d.svg",
     "static/media/code.svg": "/portfolio/static/media/code.cd1be45854da7cd8099d9f48abeb69ec.svg",
     "static/media/resume.svg": "/portfolio/static/media/resume.0606eb9786402c0c1215600c689454bb.svg",
     "static/media/email.svg": "/portfolio/static/media/email.4712a2d04381de804db06f815fbfa7f3.svg",
     "static/media/link.svg": "/portfolio/static/media/link.eedbc789a4a4bd4862976903e096efc3.svg",
-    "main.5aaf3a47.css.map": "/portfolio/static/css/main.5aaf3a47.css.map",
-    "main.9c1a1d4a.js.map": "/portfolio/static/js/main.9c1a1d4a.js.map",
+    "main.b14fc887.css.map": "/portfolio/static/css/main.b14fc887.css.map",
+    "main.15f3ee15.js.map": "/portfolio/static/js/main.15f3ee15.js.map",
     "453.8ab44547.chunk.js.map": "/portfolio/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5aaf3a47.css",
-    "static/js/main.9c1a1d4a.js"
+    "static/css/main.b14fc887.css",
+    "static/js/main.15f3ee15.js"
   ]
 }
