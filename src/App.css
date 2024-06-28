@@ -1,6 +1,5 @@
-
 body {
-    background-color: #ebd9bf;
+    background-color: #272727;
 }
 svg {
     position: fixed;
@@ -14,33 +13,37 @@ svg {
 @keyframes rotate {
     0% {
    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
 }
-100% {
-   transform: rotate(360deg);
-}
-}
+
 .out-top {
     animation: rotate 50s linear infinite;
     transform-origin: 13px 25px;
-    fill: #e1ca9f;
+    fill: #232323;
+    stroke: rgb(36, 36, 36);
 }
 .in-top {
     animation: rotate 30s linear infinite;
     transform-origin: 13px 25px;
-    fill: #b3a58b;
-    border: 1rem solid white;
+    fill: #1d1d1d;
+    stroke: rgb(29, 29, 29);
 
 }
 .out-bottom {
     animation: rotate 40s linear infinite;
     transform-origin: 84px 93px;
-    fill: #b3a58b;
+    fill: #232323;
+    stroke: rgb(36, 36, 36);
 
 }
 .in-bottom {
     animation: rotate 20s linear infinite;
     transform-origin: 84px 93px;
-    fill: #e1ca9f;
+    fill: #1d1d1d;
+    stroke: rgb(29, 29, 29);
 }
 
 /* FONTS & TEXT */
@@ -75,6 +78,10 @@ svg {
     font-style: normal;
 }
 
+.head {
+    margin-top: 2rem;
+}
+
 .header {
     font-size: 4rem;
     user-select: none;
@@ -89,24 +96,25 @@ svg {
 
 .title {
     font-size: 1.2rem;
-    flex-wrap: nowrap !important
+    flex-wrap: nowrap !important;
+    padding-left: .5rem;
 }
-
 
 
 /* ICONS */
 
 .icon {
     transform: scale(2.5);
-    margin: .5rem 3rem 0.5rem 0rem;
-    fill:black;
+    margin: .5rem 1.5rem 0.5rem 1.5rem;
+    color:black;
+    transition: filter 50ms ease;
 }
 
 .sub-icon {
     transform: scale(1.1);
     fill: black;
     flex-wrap: nowrap !important;
-    margin-right: 1rem;
+    margin: 0rem 1rem 0rem 1rem;
 }
 
 .code-icon {
@@ -115,7 +123,7 @@ svg {
 
 
 .icon:hover, .sub-icon:hover {
-    fill: rgb(222, 162, 11);
+    filter: brightness(0) invert(70%);
 }
 
 .resume {
@@ -181,8 +189,4 @@ svg {
     opacity: 1;
 
 }
-
-
-
-
 

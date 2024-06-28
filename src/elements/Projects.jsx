@@ -16,12 +16,12 @@ function Projects ({ LiveLink, Repo }) {
         <div className="row">
           <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
-            <img src={GalleryThumb} className="rounded img-fluid" alt="img"></img>
+            <img src={GalleryThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
             <p>Bid-based storefront for fictitious art gallery.</p>
             </div>
           </div>
-            <div className="d-flex justify-content-between mt-3 align-items-center">
+            <div className="d-flex justify-content-between mt-3 align-items-baseline">
               <h3 className="raleway-medium text-center title"> the gallery </h3>
               <div>
                 <Link to="https://github.com/jaxdsout/gallery-site" target="_blank" rel="noopener noreferrer"> 
@@ -35,12 +35,12 @@ function Projects ({ LiveLink, Repo }) {
           </div>
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
-            <img src={SubstreamThumb} className="rounded img-fluid" alt="img"></img>
+            <img src={SubstreamThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
             <p>Querier for content streaming locations.</p>
             </div>
           </div>
-          <div className="d-flex justify-content-between mt-3 align-items-center">
+          <div className="d-flex justify-content-between mt-3 align-items-baseline">
             <h3 className="raleway-medium text-center title"> substream </h3>
             <div>
               <Link to="https://github.com/jaxdsout/substream" target="_blank" rel="noopener noreferrer"> 
@@ -56,12 +56,12 @@ function Projects ({ LiveLink, Repo }) {
       <div className="row">
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
-            <img src={QwiklokThumb} className="rounded img-fluid" alt="img"></img>
+            <img src={QwiklokThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
             <p>Time-logger with admin & employee endpoints.</p>
             </div>
           </div>
-          <div className="d-flex justify-content-between mt-3 align-items-center">
+          <div className="d-flex justify-content-between mt-3 align-items-baseline">
             <h3 className="raleway-medium text-center title"> qwiklok </h3>
             <div>
               <Link to="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer"> 
@@ -75,12 +75,12 @@ function Projects ({ LiveLink, Repo }) {
         </div>
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
-            <img src={SimonThumb} className="rounded img-fluid" alt="img"></img>
+            <img src={SimonThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
             <p>Modern interpretation of classic memory game. </p>
             </div>
           </div>
-          <div className="d-flex justify-content-between mt-3 align-items-center">
+          <div className="d-flex justify-content-between mt-3 align-items-baseline">
             <h3 className="raleway-medium text-center title"> simon </h3>
             <div>
               <Link to="https://github.com/jaxdsout/simon" target="_blank" rel="noopener noreferrer"> 
