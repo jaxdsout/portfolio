@@ -18,7 +18,7 @@ function Projects ({ LiveLink, Repo }) {
           <div className="thumbnail-container">
             <img src={GalleryThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
-            <p>Bid-based storefront for fictitious art gallery.</p>
+            <p>Bid-based storefront for fictitious art gallery.<br/>Built with React & Django.</p>
             </div>
           </div>
             <div className="d-flex justify-content-between mt-3 align-items-baseline">
@@ -37,7 +37,7 @@ function Projects ({ LiveLink, Repo }) {
           <div className="thumbnail-container">
             <img src={SubstreamThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
-            <p>Querier for content streaming locations.</p>
+            <p>Querier for content streaming locations.<br/>Built with React.</p>
             </div>
           </div>
           <div className="d-flex justify-content-between mt-3 align-items-baseline">
@@ -58,7 +58,7 @@ function Projects ({ LiveLink, Repo }) {
           <div className="thumbnail-container">
             <img src={QwiklokThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
-            <p>Time-logger with admin & employee endpoints.</p>
+            <p>Time-logger with admin & employee endpoints.<br/>Built with Express.js.</p>
             </div>
           </div>
           <div className="d-flex justify-content-between mt-3 align-items-baseline">
@@ -67,7 +67,7 @@ function Projects ({ LiveLink, Repo }) {
               <Link to="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer"> 
                 <img src={repo_icon} alt="repo_icon" className="sub-icon"/>              
               </Link>
-              <Link to="https://qwiklok-c30005c6179d.herokuapp.com/" target="_blank" rel="noopener noreferrer"> 
+              <Link to="https://qwiklok.onrender.com/" target="_blank" rel="noopener noreferrer"> 
                 <img src={live_icon} alt="live_icon" className="sub-icon"/>
               </Link>
             </div>
@@ -77,7 +77,7 @@ function Projects ({ LiveLink, Repo }) {
           <div className="thumbnail-container">
             <img src={SimonThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
-            <p>Modern interpretation of classic memory game. </p>
+            <p>Modern interpretation of classic memory game.<br/>Built with Vanilla JS.</p>
             </div>
           </div>
           <div className="d-flex justify-content-between mt-3 align-items-baseline">
