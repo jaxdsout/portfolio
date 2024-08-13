@@ -15,10 +15,19 @@ function Projects ({ LiveLink, Repo }) {
       <div className="container my-2">
         <div className="row">
           <div className="col-12 col-md-6 p-2">
-          <div className="thumbnail-container">
-            <img src={GalleryThumb} className="rounded img-fluid thumbies" alt="img"></img>
-            <div className="description p-3 text-center rounded">
-            <p>Bid-based storefront for fictitious art gallery.<br/>Built with React & Django.</p>
+            <div className="thumbnail-container">
+              <img 
+                src={GalleryThumb} 
+                className="rounded img-fluid thumbies" 
+                alt="img"
+              />
+              <div className="description p-3 text-center rounded">
+              <p>Bid-based storefront for fictitious art gallery.</p>
+              <div>
+                <i class="prog-icon devicon-django-plain"></i>
+                <i class="prog-icon devicon-react-original"></i>
+                <i class="prog-icon devicon-postgresql-plain"></i>
+                </div>
             </div>
           </div>
             <div className="d-flex justify-content-between mt-3 align-items-baseline">
@@ -37,7 +46,11 @@ function Projects ({ LiveLink, Repo }) {
           <div className="thumbnail-container">
             <img src={SubstreamThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
-            <p>Querier for content streaming locations.<br/>Built with React.</p>
+            <p>Querier for content streaming locations.</p>
+            <div>
+              <i class="prog-icon devicon-react-original"></i>
+              <i class="prog-icon devicon-axios-plain"></i>
+            </div>
             </div>
           </div>
           <div className="d-flex justify-content-between mt-3 align-items-baseline">
@@ -58,7 +71,12 @@ function Projects ({ LiveLink, Repo }) {
           <div className="thumbnail-container">
             <img src={QwiklokThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
-            <p>Time-logger with admin & employee endpoints.<br/>Built with Express.js.</p>
+            <p>Time-logger with admin & employee endpoints.</p>
+            <div>
+              <i class="prog-icon devicon-mongodb-plain"></i>
+              <i class="prog-icon devicon-express-original"></i>
+              <i class="prog-icon devicon-nodejs-plain"></i>
+            </div>
             </div>
           </div>
           <div className="d-flex justify-content-between mt-3 align-items-baseline">
@@ -77,7 +95,10 @@ function Projects ({ LiveLink, Repo }) {
           <div className="thumbnail-container">
             <img src={SimonThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
-            <p>Modern interpretation of classic memory game.<br/>Built with Vanilla JS.</p>
+            <p>Modern interpretation of classic memory game.</p>
+            <div>
+              <i class="prog-icon devicon-javascript-plain"></i>
+            </div>
             </div>
           </div>
           <div className="d-flex justify-content-between mt-3 align-items-baseline">
