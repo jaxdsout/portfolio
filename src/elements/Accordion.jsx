@@ -43,7 +43,7 @@ function Accordion() {
           </div>
         </div>
 
-        <div className="accordion-item">
+        <div className="accordion-item mb-5">
             <h2 className="accordion-header">
                 <button 
                 className="accordion-button collapsed" 

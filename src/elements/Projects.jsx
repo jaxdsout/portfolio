@@ -41,6 +41,7 @@ function Projects ({ LiveLink, Repo }) {
                 </Link>
               </div>
             </div>
+            <hr className="mt-3"/>
           </div>
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
@@ -64,8 +65,9 @@ function Projects ({ LiveLink, Repo }) {
               </Link>
             </div>
           </div>
+          <hr className="mt-3"/>
         </div>
-      </div>
+        </div>
       <div className="row">
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
@@ -90,6 +92,7 @@ function Projects ({ LiveLink, Repo }) {
               </Link>
             </div>
           </div>
+          <hr className="mt-3"/>
         </div>
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
@@ -112,10 +115,11 @@ function Projects ({ LiveLink, Repo }) {
               </Link>
             </div>
           </div>
+          <hr className="mt-3"/>
         </div>
       </div>
     </div>
-    )
+  )
 
 }
 
