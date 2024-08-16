@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import resume from "../components/resume.svg"
-import pdf from "../images/JaxonSouthernResume.pdf";
 
 
 function About () {
@@ -11,7 +10,7 @@ function About () {
                 <div className="col-12 p-1">
                     <div className="d-flex flex-row justify-content-between mt-4">
                         <h1 className="raleway-heavy mb-3">about me</h1>
-                        <Link download={pdf} target="_blank" rel="noopener noreferrer"> 
+                        <Link download={"https://warehouse-bkt-0810.s3.us-east-2.amazonaws.com/JaxonSouthernResume.pdf"} target="_blank" rel="noopener noreferrer"> 
                             <img src={resume} alt="resume-logo" className="resume" title="Current Resume"/>
                         </Link>
                     </div>
