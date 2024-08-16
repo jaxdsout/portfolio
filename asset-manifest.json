@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.689e621e.css",
-    "main.js": "/portfolio/static/js/main.0c4a37bd.js",
+    "main.js": "/portfolio/static/js/main.e799b10f.js",
     "static/js/453.8ab44547.chunk.js": "/portfolio/static/js/453.8ab44547.chunk.js",
     "static/media/gallery.png": "/portfolio/static/media/gallery.3b9f12131bdf9e558d0b.png",
     "static/media/substream.png": "/portfolio/static/media/substream.c4331002cd23015b2dc3.png",
     "static/media/qwiklok.png": "/portfolio/static/media/qwiklok.5db06cd00b8173099eaf.png",
     "static/media/simon.png": "/portfolio/static/media/simon.a17f8311370730a7dc3b.png",
-    "static/media/JaxonSouthernResume.pdf": "/portfolio/static/media/JaxonSouthernResume.612f8d70302df97501b8.pdf",
     "static/media/react.svg": "/portfolio/static/media/react.e27571eaed899c642345e71163624ef9.svg",
     "static/media/django-icon.svg": "/portfolio/static/media/django-icon.73e23c39c0fbe4662b7396d10bcc6e1b.svg",
     "index.html": "/portfolio/index.html",
@@ -19,11 +18,11 @@
     "static/media/email.svg": "/portfolio/static/media/email.4712a2d04381de804db06f815fbfa7f3.svg",
     "static/media/link.svg": "/portfolio/static/media/link.eedbc789a4a4bd4862976903e096efc3.svg",
     "main.689e621e.css.map": "/portfolio/static/css/main.689e621e.css.map",
-    "main.0c4a37bd.js.map": "/portfolio/static/js/main.0c4a37bd.js.map",
+    "main.e799b10f.js.map": "/portfolio/static/js/main.e799b10f.js.map",
     "453.8ab44547.chunk.js.map": "/portfolio/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.689e621e.css",
-    "static/js/main.0c4a37bd.js"
+    "static/js/main.e799b10f.js"
   ]
 }
