@@ -6,20 +6,20 @@ import pdf from "../images/JaxonSouthernResume.pdf";
 function About () {
 
     return (
-        <div className="container d-flex flex-column min-vh-100">
+        <div className="container d-flex flex-column">
             <div className="row w-100 justify-content-center align-items-center">
                 <div className="col-12 p-1">
-                    <h1 className="raleway-heavy mb-3">about me</h1>
+                    <div className="d-flex flex-row justify-content-between mt-4">
+                        <h1 className="raleway-heavy mb-3">about me</h1>
+                        <Link download={pdf} target="_blank" rel="noopener noreferrer"> 
+                            <img src={resume} alt="resume-logo" className="resume" title="Current Resume"/>
+                        </Link>
+                    </div>
                     <p>Hello! I'm a dedicated junior software developer with years of professional experience in crafting solutions to solve problems. My background is primarily in the real estate and construction domains, but I am bringing the same discipline and creativity to my emerging software career.
                     </p>
                     <p>On a mission to expand my knowledge and horizons, I completed a part-time engineering bootcamp at General Assembly in early 2024 while continuing my current job. During the six-month course, I developed an unexpected affinity for creating databases & APIs and the ever-growing power of data. This ultimately led me to earn a certificate in Data Analytics from Google a few months afterward. Both of these programs, along with additional online courses, have refined my skills and gain a deeper understanding of how data and design control the user experience.</p>
                     <p>I have worked on multiple projects utilizing both backend and frontend technologies by the way of numerous frameworks and languages. My skills are strong in JavaScript, Python, and SQL, and I am honing my abilities in each of them every day. I'm committed to growing as a developer and data enthusiast. My current career goal is to leverage my background in relations and project management to find synergistic roles that still push me outside of my comfort zone.</p>
-                    <p>Based out of Houston, TX</p>
-                    <div className="d-flex flex-column align-items-center mb-5 mt-4">
-                    <Link download={pdf} target="_blank" rel="noopener noreferrer"> 
-                        <img src={resume} alt="resume-logo" className="resume" title="Current Resume"/>
-                    </Link>
-                    </div>
+                    <p className="pb-3">Based out of Houston, TX</p>
                     <hr/>
                 </div>
                 <div className="col-12 p-1 justify-content-center align-items-center">
