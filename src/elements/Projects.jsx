@@ -76,7 +76,7 @@ function Projects ({ LiveLink, Repo }) {
             <p>Time-logger with admin & employee endpoints.</p>
             <div>
               <i class="prog-icon devicon-mongodb-plain"></i>
-              <i class="prog-icon devicon-express-original"></i>
+              <i class="prog-icon me-2 devicon-express-original"></i>
               <i class="prog-icon devicon-nodejs-plain"></i>
             </div>
             </div>
