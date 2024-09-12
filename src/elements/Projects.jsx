@@ -27,7 +27,7 @@ function Projects ({ LiveLink, Repo }) {
               <div>
                 <i class="prog-icon devicon-django-plain"></i>
                 <i class="prog-icon devicon-react-original"></i>
-                <i class="prog-icon devicon-postgresql-plain"></i>
+                <i className="prog-icon devicon-redux-original"></i>
                 </div>
             </div>
           </div>
