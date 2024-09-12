@@ -80,6 +80,7 @@ function About () {
                                 <i className="prog-icon pe-2 pb-2 flex-shrink-1 devicon-heroku-original" title="Heroku"></i>
                                 <i className="prog-icon pe-2 pb-2 flex-shrink-1 devicon-docker-plain" title="Docker"></i>
                                 <i className="prog-icon pe-2 pb-2 flex-shrink-1 devicon-postman-plain" title="Postman"></i>
+                                <i class="prog-icon pe-2 pb-2 flex-shrink-1 devicon-amazonwebservices-plain-wordmark" title="Postman"></i>
                             </div>
                         </div>
                     </div>

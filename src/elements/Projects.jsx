@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import GalleryThumb from "../images/gallery.png"
 import SubstreamThumb from "../images/substream.png"
 import QwiklokThumb from "../images/qwiklok.png"
+import PlotterThumb from "../images/plotter.png"
 import SimonThumb from "../images/simon.png"
 import repo_icon from "../components/code.svg"
 import live_icon from "../components/link.svg"
@@ -14,6 +15,35 @@ function Projects ({ LiveLink, Repo }) {
     return (
       <div className="container my-2">
         <div className="row">
+        <div className="col-12 col-md-6 p-2">
+            <div className="thumbnail-container">
+              <img 
+                src={PlotterThumb} 
+                className="rounded img-fluid thumbies" 
+                alt="img"
+              />
+              <div className="description p-3 text-center rounded">
+              <p>CRM & list-making platform for apartment locators</p>
+              <div>
+                <i class="prog-icon devicon-django-plain"></i>
+                <i class="prog-icon devicon-react-original"></i>
+                <i class="prog-icon devicon-postgresql-plain"></i>
+                </div>
+            </div>
+          </div>
+            <div className="d-flex justify-content-between mt-3 align-items-baseline">
+              <h3 className="raleway-medium text-center title"> plotter </h3>
+              <div>
+                <Link to="https://github.com/jaxdsout/plotter" target="_blank" rel="noopener noreferrer"> 
+                  <img src={repo_icon} alt="repo_icon" className="sub-icon"/>
+                </Link>
+                <Link to="https://plotter-w3vt.onrender.com/#/home/" target="_blank" rel="noopener noreferrer"> 
+                  <img src={live_icon} alt="live_icon" className="sub-icon"/>
+                </Link>
+              </div>
+            </div>
+            <hr className="mt-3"/>
+          </div>
           <div className="col-12 col-md-6 p-2">
             <div className="thumbnail-container">
               <img 
@@ -43,7 +73,8 @@ function Projects ({ LiveLink, Repo }) {
             </div>
             <hr className="mt-3"/>
           </div>
-        <div className="col-12 col-md-6 p-2">
+      <div className="row">
+      <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
             <img src={SubstreamThumb} className="rounded img-fluid thumbies" alt="img"></img>
             <div className="description p-3 text-center rounded">
@@ -61,33 +92,6 @@ function Projects ({ LiveLink, Repo }) {
                 <img src={repo_icon} alt="repo_icon" className="sub-icon"/>
               </Link>
               <Link to="https://jaxdsout.github.io/substream/#/" target="_blank" rel="noopener noreferrer"> 
-                <img src={live_icon} alt="live_icon" className="sub-icon"/>
-              </Link>
-            </div>
-          </div>
-          <hr className="mt-3"/>
-        </div>
-        </div>
-      <div className="row">
-        <div className="col-12 col-md-6 p-2">
-          <div className="thumbnail-container">
-            <img src={QwiklokThumb} className="rounded img-fluid thumbies" alt="img"></img>
-            <div className="description p-3 text-center rounded">
-            <p>Time-logger with admin & employee endpoints.</p>
-            <div>
-              <i class="prog-icon devicon-mongodb-plain"></i>
-              <i class="prog-icon me-2 devicon-express-original"></i>
-              <i class="prog-icon devicon-nodejs-plain"></i>
-            </div>
-            </div>
-          </div>
-          <div className="d-flex justify-content-between mt-3 align-items-baseline">
-            <h3 className="raleway-medium text-center title"> qwiklok </h3>
-            <div>
-              <Link to="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer"> 
-                <img src={repo_icon} alt="repo_icon" className="sub-icon"/>              
-              </Link>
-              <Link to="https://qwiklok.onrender.com/" target="_blank" rel="noopener noreferrer"> 
                 <img src={live_icon} alt="live_icon" className="sub-icon"/>
               </Link>
             </div>
@@ -117,6 +121,36 @@ function Projects ({ LiveLink, Repo }) {
           </div>
           <hr className="mt-3"/>
         </div>
+        </div>
+       
+        <div className="row">
+        <div className="col-12 col-md-6 p-2">
+          <div className="thumbnail-container">
+            <img src={QwiklokThumb} className="rounded img-fluid thumbies" alt="img"></img>
+            <div className="description p-3 text-center rounded">
+            <p>Time-logger with admin & employee endpoints.</p>
+            <div>
+              <i class="prog-icon devicon-mongodb-plain"></i>
+              <i class="prog-icon me-2 devicon-express-original"></i>
+              <i class="prog-icon devicon-nodejs-plain"></i>
+            </div>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between mt-3 align-items-baseline">
+            <h3 className="raleway-medium text-center title"> qwiklok </h3>
+            <div>
+              <Link to="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer"> 
+                <img src={repo_icon} alt="repo_icon" className="sub-icon"/>              
+              </Link>
+              <Link to="https://qwiklok.onrender.com/" target="_blank" rel="noopener noreferrer"> 
+                <img src={live_icon} alt="live_icon" className="sub-icon"/>
+              </Link>
+            </div>
+          </div>
+          <hr className="mt-3"/>
+        </div>
+        </div>
+        
       </div>
     </div>
   )
