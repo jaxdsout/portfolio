@@ -66,7 +66,7 @@ function Projects ({ LiveLink, Repo }) {
                 <Link to="https://github.com/jaxdsout/gallery-site" target="_blank" rel="noopener noreferrer"> 
                   <img src={repo_icon} alt="repo_icon" className="sub-icon"/>
                 </Link>
-                <Link to="https://jaxdsout.github.io/gallery-site/#/" target="_blank" rel="noopener noreferrer"> 
+                <Link to="https://gallery-site.onrender.com" target="_blank" rel="noopener noreferrer"> 
                   <img src={live_icon} alt="live_icon" className="sub-icon"/>
                 </Link>
               </div>
@@ -91,7 +91,7 @@ function Projects ({ LiveLink, Repo }) {
               <Link to="https://github.com/jaxdsout/substream" target="_blank" rel="noopener noreferrer"> 
                 <img src={repo_icon} alt="repo_icon" className="sub-icon"/>
               </Link>
-              <Link to="https://jaxdsout.github.io/substream/#/" target="_blank" rel="noopener noreferrer"> 
+              <Link to="https://substream-xmo6.onrender.com/" target="_blank" rel="noopener noreferrer"> 
                 <img src={live_icon} alt="live_icon" className="sub-icon"/>
               </Link>
             </div>
