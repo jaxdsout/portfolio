@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "jaxonsouthern.com",
+  "homepage": "https://jaxonsouthern.com",
   "private": true,
   "dependencies": {
     "@floating-ui/react": "^0.26.16",
