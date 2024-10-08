@@ -1,7 +1,3 @@
-import { Link } from "react-router-dom"
-import resume from "../components/resume.svg"
-import Render from "../components/render.png"
-
 function About () {
 
     return (
@@ -9,10 +5,7 @@ function About () {
             <div className="row w-100 justify-content-center align-items-center">
                 <div className="col-12 p-1">
                     <div className="d-flex flex-row justify-content-between mt-4">
-                        <h1 className="raleway-heavy mb-3">about me</h1>
-                        <Link to={"https://plotter-medi-0814.s3.us-east-2.amazonaws.com/JaxonSouthernResume.pdf"} target="_blank" rel="noopener noreferrer"> 
-                            <img src={resume} alt="resume-logo" className="resume" title="Current Resume"/>
-                        </Link>
+                        <h1 className="raleway-heavy mb-3">bio</h1>
                     </div>
                     <p>Hello! I'm a dedicated junior software developer with years of professional experience in crafting solutions to solve problems. My background is primarily in the real estate and construction domains, but I am bringing the same discipline and creativity to my emerging software career.
                     </p>

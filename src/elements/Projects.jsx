@@ -19,7 +19,7 @@ function Projects ({ LiveLink, Repo }) {
             <div className="thumbnail-container">
               <img 
                 src={PlotterThumb} 
-                className="rounded img-fluid thumbies" 
+                className="rounded img-fluid w-100" 
                 alt="img"
               />
               <div className="description p-3 text-center rounded">
@@ -35,10 +35,10 @@ function Projects ({ LiveLink, Repo }) {
               <h3 className="raleway-medium text-center title"> plotter </h3>
               <div>
                 <Link to="https://github.com/jaxdsout/plotter" target="_blank" rel="noopener noreferrer"> 
-                  <img src={repo_icon} alt="repo_icon" className="sub-icon"/>
+                  <img src={repo_icon} alt="repo_icon" className="sub-icon" title="Repository"/>
                 </Link>
                 <Link to="https://plotter-w3vt.onrender.com/#/home/" target="_blank" rel="noopener noreferrer"> 
-                  <img src={live_icon} alt="live_icon" className="sub-icon"/>
+                  <img src={live_icon} alt="live_icon" className="sub-icon" title="Deployed"/>
                 </Link>
               </div>
             </div>
@@ -48,7 +48,7 @@ function Projects ({ LiveLink, Repo }) {
             <div className="thumbnail-container">
               <img 
                 src={GalleryThumb} 
-                className="rounded img-fluid thumbies" 
+                className="rounded img-fluid w-100" 
                 alt="img"
               />
               <div className="description p-3 text-center rounded">
@@ -64,10 +64,10 @@ function Projects ({ LiveLink, Repo }) {
               <h3 className="raleway-medium text-center title"> the gallery </h3>
               <div>
                 <Link to="https://github.com/jaxdsout/gallery-site" target="_blank" rel="noopener noreferrer"> 
-                  <img src={repo_icon} alt="repo_icon" className="sub-icon"/>
+                  <img src={repo_icon} alt="repo_icon" className="sub-icon" title="Repository"/>
                 </Link>
                 <Link to="https://gallery-site.onrender.com" target="_blank" rel="noopener noreferrer"> 
-                  <img src={live_icon} alt="live_icon" className="sub-icon"/>
+                  <img src={live_icon} alt="live_icon" className="sub-icon" title="Deployed"/>
                 </Link>
               </div>
             </div>
@@ -76,7 +76,7 @@ function Projects ({ LiveLink, Repo }) {
       <div className="row">
       <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
-            <img src={SubstreamThumb} className="rounded img-fluid thumbies" alt="img"></img>
+            <img src={SubstreamThumb} className="rounded img-fluid w-100" alt="img"></img>
             <div className="description p-3 text-center rounded">
             <p>Querier for content streaming locations.</p>
             <div>
@@ -89,10 +89,10 @@ function Projects ({ LiveLink, Repo }) {
             <h3 className="raleway-medium text-center title"> substream </h3>
             <div>
               <Link to="https://github.com/jaxdsout/substream" target="_blank" rel="noopener noreferrer"> 
-                <img src={repo_icon} alt="repo_icon" className="sub-icon"/>
+                <img src={repo_icon} alt="repo_icon" className="sub-icon" title="Repository"/>
               </Link>
               <Link to="https://substream-xmo6.onrender.com/" target="_blank" rel="noopener noreferrer"> 
-                <img src={live_icon} alt="live_icon" className="sub-icon"/>
+                <img src={live_icon} alt="live_icon" className="sub-icon" title="Deployed"/>
               </Link>
             </div>
           </div>
@@ -100,7 +100,7 @@ function Projects ({ LiveLink, Repo }) {
         </div>
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
-            <img src={SimonThumb} className="rounded img-fluid thumbies" alt="img"></img>
+            <img src={SimonThumb} className="rounded img-fluid w-100" alt="img"></img>
             <div className="description p-3 text-center rounded">
             <p>Modern interpretation of classic memory game.</p>
             <div>
@@ -112,10 +112,10 @@ function Projects ({ LiveLink, Repo }) {
             <h3 className="raleway-medium text-center title"> simon </h3>
             <div>
               <Link to="https://github.com/jaxdsout/simon" target="_blank" rel="noopener noreferrer"> 
-                <img src={repo_icon} alt="repo_icon" className="sub-icon"/>
+                <img src={repo_icon} alt="repo_icon" className="sub-icon" title="Repository"/>
               </Link>
               <Link to="https://jaxdsout.github.io/simon/" target="_blank" rel="noopener noreferrer"> 
-                <img src={live_icon} alt="live_icon" className="sub-icon"/>
+                <img src={live_icon} alt="live_icon" className="sub-icon" title="Deployed"/>
               </Link>
             </div>
           </div>
@@ -126,24 +126,24 @@ function Projects ({ LiveLink, Repo }) {
         <div className="row">
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
-            <img src={QwiklokThumb} className="rounded img-fluid thumbies" alt="img"></img>
+            <img src={QwiklokThumb} className="rounded img-fluid w-100" alt="img"></img>
             <div className="description p-3 text-center rounded">
-            <p>Time-logger with admin & employee endpoints.</p>
-            <div>
-              <i class="prog-icon devicon-mongodb-plain"></i>
-              <i class="prog-icon me-2 devicon-express-original"></i>
-              <i class="prog-icon devicon-nodejs-plain"></i>
-            </div>
+              <p>Time-logger with admin & employee endpoints.</p>
+              <div>
+                <i class="prog-icon devicon-mongodb-plain"></i>
+                <i class="prog-icon me-2 devicon-express-original"></i>
+                <i class="prog-icon devicon-nodejs-plain"></i>
+              </div>
             </div>
           </div>
           <div className="d-flex justify-content-between mt-3 align-items-baseline">
             <h3 className="raleway-medium text-center title"> qwiklok </h3>
             <div>
               <Link to="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer"> 
-                <img src={repo_icon} alt="repo_icon" className="sub-icon"/>              
+                <img src={repo_icon} alt="repo_icon" className="sub-icon" title="Repository"/>              
               </Link>
               <Link to="https://qwiklok.onrender.com/" target="_blank" rel="noopener noreferrer"> 
-                <img src={live_icon} alt="live_icon" className="sub-icon"/>
+                <img src={live_icon} alt="live_icon" className="sub-icon" title="Deployed"/>
               </Link>
             </div>
           </div>
