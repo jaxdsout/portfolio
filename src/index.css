@@ -112,8 +112,7 @@ svg {
 .portfolio {
   font-size: 4rem;
   user-select: none;
-  transition: opacity 0.3s ease;
-
+  transition: opacity 1s ease-out;
 }
 
 a {
@@ -129,7 +128,7 @@ a {
   transition: opacity 1s ease-out;
 }
 
-.zen-notif.fade-out {
+.zen-notif.fade-out, .portfolio.fade-out, .author.fade-out {
   opacity: 0;
 }
 
@@ -138,6 +137,7 @@ a {
   font-size: 1.5rem;
   user-select: none;
   margin-top: -1rem;
+  transition: opacity 1s ease-out;
 }
 
 .title {
