@@ -105,10 +105,32 @@ svg {
   margin-top: 2rem;
 }
 
-.header {
+.head:hover {
+  fill: none !important
+}
+
+.portfolio {
   font-size: 4rem;
   user-select: none;
-  text-decoration: none;
+  transition: opacity 0.3s ease;
+
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.portfolio:hover {
+  opacity: 0;
+}
+
+.zen-notif {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.zen-notif.fade-out {
+  opacity: 0;
 }
 
 .author {
@@ -140,27 +162,28 @@ svg {
   text-decoration: none;
 }
 
+
+.biotainer {
+  width: 75%
+}
+
 @media screen and (max-width: 600px) {
   .tabs {
     margin: .4rem;
     letter-spacing: 0.15rem;
   }
 
-  /* .raleway-medium {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: .2rem;
-  } */
+  .biotainer {
+    width: 100%
+  }
 }
 
 .tabs:hover {
-  color: #292929
+  color: white
 }
 
 .tabs::after {
-  color: #000000
+  color: white
 }
 
 
@@ -178,7 +201,7 @@ svg {
 }
 
 .dom-icon {
-  font-size: 3rem !important;
+  font-size: 3rem;
   color: white;
   flex-wrap: nowrap !important;
   margin: .5rem 1.5rem 0.5rem 1.5rem;
@@ -187,13 +210,17 @@ svg {
 }
 
 .sub-icon:hover {
-  color: #292929
+  color: #eb8242;
 }
 
 .dom-icon:hover {
   color: #eb8242
 }
 
+
+.resume-icon {
+  font-size: 4rem !important;
+}
 
 /* THUMBNAIL */
 .thumbnail-container {

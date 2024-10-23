@@ -8,7 +8,7 @@ import SimonThumb from "../images/simon.png"
 function Projects () {
 
     return (
-      <div className="container my-2 mt-4">
+      <div className="container mt-4 mb-4 d-flex align-items-center justify-content-center">
         <div className="row">
           <div className="col-12 col-md-6 p-2">
             <div className="thumbnail-container">
