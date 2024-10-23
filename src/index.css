@@ -142,8 +142,17 @@ svg {
 
 @media screen and (max-width: 600px) {
   .tabs {
-    margin: .25rem
+    margin: .4rem;
+    letter-spacing: 0.15rem;
   }
+
+  /* .raleway-medium {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .2rem;
+  } */
 }
 
 .tabs:hover {

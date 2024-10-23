@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './elements/Header'
-import Accordion from './elements/Accordion'
+import Nav from './elements/Nav'
 import Motion from './elements/Motion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +12,7 @@ root.render(
   <Router>
     <React.StrictMode>
       <Header />
-      <Accordion />
+      <Nav />
       <Motion />
     </React.StrictMode>
   </Router>
