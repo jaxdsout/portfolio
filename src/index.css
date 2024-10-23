@@ -112,7 +112,7 @@ svg {
 .portfolio {
   font-size: 4rem;
   user-select: none;
-  transition: opacity 1s ease-out;
+  transition: opacity .5s ease-out;
 }
 
 a {
