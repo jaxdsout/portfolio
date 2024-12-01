@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Contact () {
 
     return (
-      <div className='container text-center mt-4'>
+      <div className='container text-center mt-4 animator'>
         <Link className='' to={"mailto:jaxon.southern@mac.com"}>
           <i className="bi bi-send-fill dom-icon" title="Email"></i>
         </Link>

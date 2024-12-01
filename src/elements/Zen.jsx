@@ -11,7 +11,7 @@ function Zen () {
     }, []);
 
     return (
-        <div className="container d-flex justify-content-center text-white">
+        <div className="container d-flex justify-content-center text-white animator">
             <p className="zen-notif">You have now activated zen mode.</p>
         </div>
     )

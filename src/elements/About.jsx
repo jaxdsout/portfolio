@@ -1,7 +1,9 @@
 function About () {
 
     return (
-        <div className="container d-flex flex-column mt-4 mb-4 justify-content-center align-items-center biotainer">
+        <div 
+            className="container d-flex flex-column mt-4 mb-4 justify-content-center align-items-center biotainer animator"
+        >
             <div className="text-white text-center">
                 <h1 className="raleway-heavy mb-3">bio</h1>
                 <div className="text-box p-3 rounded-3">
