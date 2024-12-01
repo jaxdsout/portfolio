@@ -8,7 +8,7 @@ import ValerieThumb from "../images/valerie.png";
 
 function Projects() {
   return (
-    <div className="container mt-4 mb-4">
+    <div className="container mt-4 mb-4 animator">
       <div className="row">
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
