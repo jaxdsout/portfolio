@@ -15,7 +15,7 @@ function Projects() {
             <img
               src={PlotterThumb}
               className="rounded img-fluid w-100"
-              alt="Plotter"
+              alt="Atlas"
             />
             <div className="description p-3 text-center rounded text-white">
               <p>CRM & list-making platform for apartment locators</p>
@@ -27,12 +27,12 @@ function Projects() {
             </div>
           </div>
           <div className="d-flex justify-content-between mt-3 align-items-baseline text-box p-3 rounded-3">
-            <h3 className="raleway-medium text-center title text-white"> plotter </h3>
+            <h3 className="raleway-medium text-center title text-white"> atlas </h3>
             <div>
               <Link to="https://github.com/jaxdsout/plotter" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-code-slash sub-icon" title="Repository"></i>
               </Link>
-              <Link to="https://plotter-w3vt.onrender.com/#/home/" target="_blank" rel="noopener noreferrer">
+              <Link to="https://aptatlas.com/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-box-arrow-up-right sub-icon" title="Deployed"></i>
               </Link>
             </div>
