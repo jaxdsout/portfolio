@@ -16,7 +16,7 @@ function App () {
             <Header />
             <Nav />
             <Routes>
-                <Route index element={<Projects />} />
+                <Route index path="/" element={<Projects />} />
                 <Route path="/zen/" element={<Zen />} />
                 <Route path="/about/" element={<About />} />
                 <Route path="/resume/" element={<Resume />} />
