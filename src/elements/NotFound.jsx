@@ -13,9 +13,12 @@ function NotFound() {
     }, []);
 
     return (
-      <div className="container d-flex flex-column justify-content-center align-items-center text-white  p-3 rounded-3">
-        <p className="raleway-medium text-center title text-white fs-3 text-box">404 : page not found</p>
-        <p className="zen-notif">Sorry, the page you’re looking for doesn’t exist.</p>
+      <div className="flex flex-col justify-center items-center text-white">
+        <div className="bg-white/5 p-3 rounded-lg text-center">
+          <p className="raleway-medium text-center text-[1.5rem]">404 : page not found</p>
+          <p className="text-xs">Sorry, the page you’re looking for doesn’t exist.</p>
+        </div>
+      
       </div>
     );
 }

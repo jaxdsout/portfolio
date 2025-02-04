@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 function Nav() {
     const [zenMode, setZenMode] = useState(false);
@@ -14,34 +13,21 @@ function Nav() {
     }
 
     return (
-            <div>
+            <>
                 {zenMode ? (
                     <>
-                        <div className="container d-flex justify-content-center text-white animator">
-                            <p className="zen-notif">You have now activated zen mode.</p>
-                            <i onClick={handleZenMode} className="bi bi-peace icon-link icon-link-hover"></i>
-
-                        </div>
-                        <div>
+                        <div className="flex flex-col justify-center items-center text-white animator">
+                            <p>You have now activated zen mode.</p>
+                            <i onClick={handleZenMode} className="bi bi-peace hover:drop-shadow-lg"></i>
                         </div>
                     </>
                 ) : (
-                    <>
-                        <div className='container text-container text-center head'>
-                            <Link to="/zen/" onClick={handleZenMode}><h1 className='text-white raleway-heavy portfolio'>portfolio</h1></Link>
-                            <p className='text-white jersey-25-charted-regular author'>jaxon southern</p>
-                        </div>
-                        <div className="pb-4 pt-2 d-flex flex-column justify-content-center align-items-center">
-                            <div className="tab-bar rounded-4">
-                                <Link className='tabs raleway-medium' to="/about/">about</Link>
-                                <Link className='tabs raleway-medium' to="/">projects</Link>
-                                <Link className='tabs raleway-medium' to="/resume/">resume</Link>
-                                <Link className='tabs raleway-medium' to="/contact/">contact</Link>
-                            </div>
-                        </div>
-                    </>
+                    <div className='flex flex-col items-center text-white justify-center '>
+                            <a href="/zen/" onClick={handleZenMode}><h1 className='raleway-heavy text-[4rem] select-none'>portfolio</h1></a>
+                            <p className='jersey-25-charted-regular text-[1.5rem] select-none -mt-2 uppercase'>jaxon southern</p>                      
+                    </div>
                 )}
-            </div>
+            </>
     )
 }
 
