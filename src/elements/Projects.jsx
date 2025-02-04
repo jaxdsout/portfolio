@@ -14,11 +14,14 @@ function Projects() {
           <div className="thumbnail-container">
             <img
               src={PlotterThumb}
-              className="rounded img-fluid w-100"
+              className="rounded img-fluid w-100 shadow-sm"
               alt="Atlas"
             />
-            <div className="description p-3 text-center rounded text-white">
-              <p>CRM & list-making platform for apartment locators</p>
+            <div 
+              className="description p-3 text-center rounded text-white"
+              onDoubleClick={() => window.open('https://aptatlas.com/')}
+            >
+              <p className="user-select-none">CRM & list-making platform for apartment locators</p>
               <div>
                 <i className="prog-icon devicon-django-plain"></i>
                 <i className="prog-icon devicon-react-original"></i>
@@ -44,11 +47,14 @@ function Projects() {
           <div className="thumbnail-container">
             <img
               src={GalleryThumb}
-              className="rounded img-fluid w-100"
+              className="rounded img-fluid w-100 shadow-sm"
               alt="Gallery"
             />
-            <div className="description p-3 text-center text-white rounded">
-              <p>Bid-based storefront for fictitious art gallery.</p>
+            <div 
+              className="description p-3 text-center text-white rounded" 
+              onDoubleClick={() => window.open('https://gallery-site.onrender.com')}
+            >
+              <p className="user-select-none">Bid-based storefront for fictitious art gallery.</p>
               <div>
                 <i className="prog-icon devicon-django-plain"></i>
                 <i className="prog-icon devicon-react-original"></i>
@@ -69,18 +75,23 @@ function Projects() {
           </div>
           <hr className="mt-3 text-white" />
         </div>
-      </div> {/* End of first row */}
+      </div> 
+      
+      {/* End of first row */}
 
       <div className="row">
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
             <img
               src={SubstreamThumb}
-              className="rounded img-fluid w-100"
+              className="rounded img-fluid w-100 shadow-sm"
               alt="Substream"
             />
-            <div className="description p-3 text-center text-white rounded">
-              <p>Querier for content streaming locations.</p>
+            <div 
+              className="description p-3 text-center text-white rounded"
+              onDoubleClick={() => window.open('https://substream-xmo6.onrender.com/')}
+            >
+              <p className="user-select-none">Querier for content streaming locations.</p>
               <div>
                 <i className="prog-icon devicon-react-original"></i>
                 <i className="prog-icon devicon-axios-plain"></i>
@@ -105,11 +116,14 @@ function Projects() {
           <div className="thumbnail-container">
             <img
               src={ValerieThumb}
-              className="rounded img-fluid w-100"
+              className="rounded img-fluid w-100 shadow-sm"
               alt="Valerie"
             />
-            <div className="description p-3 text-center text-white rounded">
-              <p>Personalized real estate agent website with custom webform</p>
+            <div 
+              className="description p-3 text-center text-white rounded"
+              onDoubleClick={() => window.open('https://valeriesouthern.com/')}
+            >
+              <p className="user-select-none">Personalized real estate agent website with custom webform</p>
               <div>
                 <i className="prog-icon devicon-react-original"></i>
                 <i className="prog-icon devicon-django-plain"></i>
@@ -127,18 +141,23 @@ function Projects() {
           </div>
           <hr className="mt-3 text-white" />
         </div>
-      </div> {/* End of second row */}
+      </div> 
+      
+      {/* End of second row */}
 
       <div className="row">
         <div className="col-12 col-md-6 p-2">
           <div className="thumbnail-container">
             <img
               src={SimonThumb}
-              className="rounded img-fluid w-100"
+              className="rounded img-fluid w-100 shadow-sm"
               alt="Simon"
             />
-            <div className="description p-3 text-center text-white rounded">
-              <p>Modern interpretation of classic memory game.</p>
+            <div 
+              className="description p-3 text-center text-white rounded"
+              onDoubleClick={() => window.open('https://jaxdsout.github.io/simon/')}
+            >
+              <p className="user-select-none">Modern interpretation of classic memory game.</p>
               <div>
                 <i className="prog-icon devicon-javascript-plain"></i>
               </div>
@@ -162,11 +181,14 @@ function Projects() {
           <div className="thumbnail-container">
             <img
               src={QwiklokThumb}
-              className="rounded img-fluid w-100"
+              className="rounded img-fluid w-100 shadow-sm"
               alt="Qwiklok"
             />
-            <div className="description p-3 text-center rounded text-white">
-              <p>Time-logger with admin & employee endpoints.</p>
+            <div 
+              className="description p-3 text-center rounded text-white"
+              onDoubleClick={() => window.open('https://qwiklok.onrender.com/')}
+            >
+              <p className="user-select-none">Time-logger with admin & employee endpoints.</p>
               <div>
                 <i className="prog-icon devicon-mongodb-plain"></i>
                 <i className="prog-icon me-2 devicon-express-original"></i>
@@ -187,7 +209,8 @@ function Projects() {
           </div>
           <hr className="mt-3 text-white" />
         </div>
-      </div> {/* End of third row */}
+      </div> 
+      {/* End of third row */}
     </div>
   );
 }

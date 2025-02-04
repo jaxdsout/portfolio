@@ -1,4 +1,3 @@
-import Header from './elements/Header'
 import Nav from './elements/Nav'
 import Motion from './elements/Motion';
 import About from './elements/About';
@@ -13,7 +12,6 @@ function App () {
 
     return (
         <>
-            <Header />
             <Nav />
             <Routes>
                 <Route index path="/" element={<Projects />} />
