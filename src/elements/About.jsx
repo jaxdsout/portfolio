@@ -3,7 +3,7 @@ function About () {
     return (
 
         <div className="mb-12 animator flex flex-col p-7 items-center justify-center text-white">
-            <div className="w-11/12 md:w-1/2 p-2 text-white">
+            <div className="w-full md:w-1/2 p-2 text-white">
                 <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm">
                     <h1 className="raleway-heavy text-center mb-5 text-[2rem]">bio</h1>
                     <p className="mb-3">
@@ -17,7 +17,6 @@ function About () {
                     </p>
                     <p className="text-center">Based out of Houston, TX</p>
                     <hr className="mt-3 text-white" />
-
                 </div>
 
                 
@@ -32,6 +31,7 @@ function About () {
                         <i className="text-[4rem] p-2 flex-shrink-1 devicon-pandas-plain" title="Pandas"></i>
                         <i className="text-[4rem] p-2 flex-shrink-1 devicon-streamlit-plain" title="Streamlit"></i>
                     </div>
+                  
             
                     <h1 className="raleway-medium select-none font-[1.5rem] text-center mb-2">javascript</h1>
                     <div className="flex flex-row justify-center p-3 rounded">

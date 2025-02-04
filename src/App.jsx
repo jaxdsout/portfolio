@@ -4,7 +4,6 @@ import Projects from './elements/Projects';
 import Contact from './elements/Contact';
 import Resume from './elements/Resume';
 import { Routes, Route } from 'react-router-dom';
-import NotFound from './elements/NotFound';
 import Tabs from './elements/Tabs';
 
 function App () {
@@ -18,7 +17,6 @@ function App () {
                     <Route path="resume" element={<Resume />} />
                     <Route path="contact" element={<Contact />} />
                 </Route>
-                <Route path="*" element={<NotFound />} />
             </Routes>
             <Motion />
         </div>

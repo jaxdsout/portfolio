@@ -8,17 +8,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #e7a55e;
+  user-select: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-body {
-  background-color: #e7a55e;
-}
-
 
 @keyframes wave {
   0% {

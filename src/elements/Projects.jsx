@@ -40,7 +40,7 @@ function Projects() {
               </Link>
             </div>
           </div>
-          <hr className="mt-3 text-white" />
+          <hr className="mt-5 text-white" />
         </div>
 
         <div className="w-full md:w-1/2 p-2">
@@ -73,7 +73,7 @@ function Projects() {
               </Link>
             </div>
           </div>
-          <hr className="mt-3 text-white" />
+          <hr className="mt-5 text-white" />
         </div>
       </div> 
       
@@ -109,7 +109,7 @@ function Projects() {
               </Link>
             </div>
           </div>
-          <hr className="mt-3 text-white" />
+          <hr className="mt-5 text-white" />
         </div>
 
         <div className="w-full md:w-1/2 p-2">
@@ -139,7 +139,7 @@ function Projects() {
               </Link>
             </div>
           </div>
-          <hr className="mt-3 text-white" />
+          <hr className="mt-5 text-white" />
         </div>
       </div> 
       
@@ -174,7 +174,7 @@ function Projects() {
               </Link>
             </div>
           </div>
-          <hr className="mt-3 text-white" />
+          <hr className="mt-5 text-white" />
         </div>
 
         <div className="w-full md:w-1/2 p-2">
@@ -207,7 +207,7 @@ function Projects() {
               </Link>
             </div>
           </div>
-          <hr className="mt-3 text-white" />
+          <hr className="mt-5 text-white" />
         </div>
       </div> 
       {/* End of third row */}
