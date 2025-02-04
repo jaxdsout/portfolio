@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 import GalleryThumb from "../images/gallery.png";
 import SubstreamThumb from "../images/substream.png";
 import QwiklokThumb from "../images/qwiklok.png";
-import PlotterThumb from "../images/plotter.png";
+import AtlasThumb from "../images/atlas.png";
 import SimonThumb from "../images/simon.png";
 import ValerieThumb from "../images/valerie.png";
 
@@ -13,7 +12,7 @@ function Projects() {
         <div className="w-full md:w-1/2 p-2">
           <div className="relative group inline-block mt-2">
             <img
-              src={PlotterThumb}
+              src={AtlasThumb}
               className=" block w-full rounded drop-shadow-sm transition-opacity duration-300 group-hover:opacity-20"
               alt="Atlas"
             />
@@ -32,12 +31,12 @@ function Projects() {
           <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
             <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> atlas </h3>
             <div>
-              <Link to="https://github.com/jaxdsout/plotter" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/jaxdsout/plotter" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </Link>
-              <Link to="https://aptatlas.com/" target="_blank" rel="noopener noreferrer">
+              </a>
+              <a href="https://aptatlas.com/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </Link>
+              </a>
             </div>
           </div>
           <hr className="mt-5 text-white" />
@@ -65,12 +64,12 @@ function Projects() {
           <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
             <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> the gallery </h3>
             <div>
-              <Link to="https://github.com/jaxdsout/gallery-site" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/jaxdsout/gallery-site" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </Link>
-              <Link to="https://gallery-site.onrender.com" target="_blank" rel="noopener noreferrer">
+              </a>
+              <a href="https://gallery-site.onrender.com" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </Link>
+              </a>
             </div>
           </div>
           <hr className="mt-5 text-white" />
@@ -101,12 +100,12 @@ function Projects() {
           <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
             <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> substream </h3>
             <div>
-              <Link to="https://github.com/jaxdsout/substream" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/jaxdsout/substream" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </Link>
-              <Link to="https://substream-xmo6.onrender.com/" target="_blank" rel="noopener noreferrer">
+              </a>
+              <a href="https://substream-xmo6.onrender.com/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </Link>
+              </a>
             </div>
           </div>
           <hr className="mt-5 text-white" />
@@ -134,9 +133,9 @@ function Projects() {
           <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
             <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> valerie </h3>
             <div>
-              <Link to="https://valeriesouthern.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://valeriesouthern.com" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </Link>
+              </a>
             </div>
           </div>
           <hr className="mt-5 text-white" />
@@ -166,12 +165,12 @@ function Projects() {
           <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
             <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> simon </h3>
             <div>
-              <Link to="https://github.com/jaxdsout/simon" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/jaxdsout/simon" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </Link>
-              <Link to="https://jaxdsout.github.io/simon/" target="_blank" rel="noopener noreferrer">
+              </a>
+              <a href="https://jaxdsout.github.io/simon/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </Link>
+              </a>
             </div>
           </div>
           <hr className="mt-5 text-white" />
@@ -199,12 +198,12 @@ function Projects() {
           <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
             <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> qwiklok </h3>
             <div>
-              <Link to="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </Link>
-              <Link to="https://qwiklok.onrender.com/" target="_blank" rel="noopener noreferrer">
+              </a>
+              <a href="https://qwiklok.onrender.com/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </Link>
+              </a>
             </div>
           </div>
           <hr className="mt-5 text-white" />
