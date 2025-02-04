@@ -1,10 +1,10 @@
 function About () {
 
     return (
-        <div className="mt-4 mb-12 animator">
-            <div className="flex flex-col justify-center items-center text-white">
-                <h1 className="raleway-heavy text-center mb-3 text-[2rem]">bio</h1>
-                <div className="w-full md:w-1/2 bg-white/5 p-8 rounded-lg text-sm">
+        <div className="mb-12 animator flex flex-col p-8 items-center justify-center">
+            <div className="w-full md:w-1/2 p-2 text-white -mt-3">
+                <h1 className="raleway-heavy text-center mb-1 text-[2rem]">bio</h1>
+                <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm">
                     <p className="mb-3">
                         Hello! I'm a dedicated junior software developer with years of professional experience in crafting solutions to solve problems. My background is primarily in the real estate and construction domains, but I am bringing the same discipline and creativity to my emerging software career.
                     </p>
@@ -18,12 +18,12 @@ function About () {
                 </div>
                 <hr/>
             </div>
-            <div className="flex flex-col justify-center items-center text-white">
-                <h1 className="raleway-heavy mt-2 text-center mb-3 text-[2rem]">skills</h1>
-                <div className="flex flex-wrap justify-center items-center">
-                    <div className="w-full md:w-1/2 m-3">
-                        <h1 className="raleway-medium select-none font-[1.5rem] text-center">python</h1>
-                        <div className="flex justify-center p-3 rounded bg-white/5">
+            <div className="w-full md:w-1/2 p-2 text-white">
+                <h1 className="raleway-heavy text-center mb-1 text-[2rem]">skills</h1>
+                <div className="flex flex-col items-center justify-center">
+                    <div className="w-full mt-4">
+                        <h1 className="raleway-medium select-none font-[1.5rem] text-center mb-2">python</h1>
+                        <div className="flex flex-row justify-center p-3 rounded bg-white/5">
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-python-plain" title="Python"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-django-plain" title="Django"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-flask-original" title="Flask"></i>
@@ -31,9 +31,9 @@ function About () {
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-streamlit-plain" title="Streamlit"></i>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 m-3">
-                        <h1 className="raleway-medium select-none font-[1.5rem] text-center">javascript</h1>
-                        <div className="flex justify-center p-3 rounded bg-white/5">
+                    <div className="w-full mt-4">
+                        <h1 className="raleway-medium select-none font-[1.5rem] text-center mb-2">javascript</h1>
+                        <div className="flex flex-row justify-center p-3 rounded bg-white/5">
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-javascript-plain" title="Javascript"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-react-original" title="React"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-redux-original" title="Redux"></i>
@@ -41,17 +41,17 @@ function About () {
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-nodejs-plain" title="Node"></i>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 m-3">
-                        <h1 className="raleway-medium select-none font-[1.5rem] text-center">styling</h1>
-                        <div className="flex justify-center p-3 rounded bg-white/5">
+                    <div className="w-full mt-4">
+                        <h1 className="raleway-medium select-none font-[1.5rem] text-center mb-2">styling</h1>
+                        <div className="flex flex-row justify-center p-3 rounded bg-white/5">
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-css3-plain" title="CSS3"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-bootstrap-plain" title="Bootstrap"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-handlebars-original" title="Handlebars"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-tailwindcss-original" title="Tailwind"></i>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 m-3">
-                        <h1 className="raleway-medium select-none font-[1.5rem] text-center">databases</h1>
+                    <div className="w-full mt-4">
+                        <h1 className="raleway-medium select-none font-[1.5rem] text-center mb-2">databases</h1>
                         <div className="flex justify-center p-3 rounded bg-white/5">
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-mysql-original" title="MySQL"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-postgresql-plain" title="PostgreSQL"></i>
@@ -60,8 +60,8 @@ function About () {
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-mongoose-original" title="Mongoose"></i>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 m-3">
-                        <h1 className="raleway-medium select-none font-[1.5rem] text-center">analytics</h1>
+                    <div className="w-full mt-4">
+                        <h1 className="raleway-medium select-none font-[1.5rem] text-center mb-2">analytics</h1>
                         <div className="flex justify-center p-3 rounded bg-white/5">
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-rstudio-plain" title="R Studio"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-matlab-plain" title="Matlab"></i>
@@ -69,8 +69,8 @@ function About () {
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-plotly-plain" title="Plotly"></i>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 m-3">
-                        <h1 className="raleway-medium select-none font-[1.5rem] text-center">deployment</h1>
+                    <div className="w-full mt-4">
+                        <h1 className="raleway-medium select-none font-[1.5rem] text-center mb-2">deployment</h1>
                         <div className="flex justify-center p-3 rounded bg-white/5">
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-heroku-original" title="Heroku"></i>
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-docker-plain" title="Docker"></i>
@@ -78,9 +78,9 @@ function About () {
                             <i className="text-[4rem] p-2 flex-shrink-1 devicon-amazonwebservices-plain-wordmark" title="AWS"></i>
                         </div>
                     </div>
-                    <hr className="text-white mt-3"/>      
                 </div>
-            </div>    
+                <hr className="text-white mt-3"/>      
+            </div>  
         </div>
     )
 }

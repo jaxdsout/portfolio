@@ -8,7 +8,7 @@ import ValerieThumb from "../images/valerie.png";
 
 function Projects() {
   return (
-    <div className="mb-12 animator flex flex-col p-8 items-center justify-center">
+    <div className="mb-12 animator flex flex-col p-7 items-center justify-center">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 p-2">
           <div className="relative group inline-block mt-2">
