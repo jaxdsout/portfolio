@@ -23,7 +23,7 @@ function About () {
                 <div className="w-full md:w-1/2 p-2">
                     <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white flex-grow border-[0.05rem] border-white/5">
                         <h1 className="raleway-heavy text-center mb-5 text-[2rem]">skills</h1>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4 text-center">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4 text-center mb-8">
                             <i className="text-[4rem] p-2 devicon-python-plain" title="Python"></i>
                             <i className="text-[4rem] p-2 devicon-javascript-plain" title="Javascript"></i>
                             <i className="text-[4rem] p-2 devicon-rust-plain" title="Rust"></i>
