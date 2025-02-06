@@ -5,7 +5,7 @@ function About () {
         <div className="mb-12 animator flex flex-col p-7 items-center justify-center">
             <div className="flex flex-wrap">
                 <div className="w-full md:w-1/2 p-2">
-                    <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white flex-grow">
+                    <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white flex-grow border-[0.05rem] border-white/5">
                         <h1 className="raleway-heavy text-center mb-5 text-[2rem]">bio</h1>
                         <p className="mb-3">
                             Hello! I'm a dedicated junior software developer with years of professional experience in crafting solutions to solve problems. My background is primarily in the real estate and construction domains, but I am bringing the same discipline and creativity to my emerging software career.
@@ -21,7 +21,7 @@ function About () {
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 p-2">
-                    <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white flex-grow">
+                    <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white flex-grow border-[0.05rem] border-white/5">
                         <h1 className="raleway-heavy text-center mb-5 text-[2rem]">skills</h1>
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4 text-center">
                             <i className="text-[4rem] p-2 devicon-python-plain" title="Python"></i>

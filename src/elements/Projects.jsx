@@ -28,18 +28,20 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
-            <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> atlas </h3>
-            <div>
-              <a href="https://github.com/jaxdsout/plotter" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </a>
-              <a href="https://aptatlas.com/" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </a>
+          <div className="flex flex-col mt-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
+            <div className="flex flex-row items-start justify-between w-full">            
+              <h3 className="raleway-medium text-[1.2rem] ml-1"> atlas </h3>
+              <div>
+                <a href="https://github.com/jaxdsout/plotter" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
+                </a>
+                <a href="https://aptatlas.com/" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
+                </a>
+              </div>
             </div>
+            <hr className="mt-2 text-white w-full" />
           </div>
-          <hr className="mt-5 text-white" />
         </div>
 
         <div className="w-full md:w-1/2 p-2">
@@ -61,18 +63,21 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
-            <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> the gallery </h3>
-            <div>
-              <a href="https://github.com/jaxdsout/gallery-site" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </a>
-              <a href="https://gallery-site.onrender.com" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </a>
+          <div className="flex flex-col mt-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
+            <div className="flex flex-row items-start justify-between w-full">
+              <h3 className="raleway-medium text-[1.2rem] ml-1"> the gallery </h3>
+              <div>
+                <a href="https://github.com/jaxdsout/gallery-site" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
+                </a>
+                <a href="https://gallery-site.onrender.com" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
+                </a>
+              </div>
             </div>
+            <hr className="mt-2 text-white w-full" />
           </div>
-          <hr className="mt-5 text-white" />
+
         </div>
       </div> 
       
@@ -97,18 +102,20 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
-            <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> substream </h3>
-            <div>
-              <a href="https://github.com/jaxdsout/substream" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </a>
-              <a href="https://substream-xmo6.onrender.com/" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </a>
+          <div className="flex flex-col mt-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
+            <div className="flex flex-row items-start justify-between w-full">            
+              <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> substream </h3>
+              <div>
+                <a href="https://github.com/jaxdsout/substream" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
+                </a>
+                <a href="https://substream-xmo6.onrender.com/" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
+                </a>
+              </div>
             </div>
+            <hr className="mt-2 text-white w-full" />
           </div>
-          <hr className="mt-5 text-white" />
         </div>
 
         <div className="w-full md:w-1/2 p-2">
@@ -130,15 +137,17 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
-            <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> valerie </h3>
-            <div>
-              <a href="https://valeriesouthern.com" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </a>
+          <div className="flex flex-col mt-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
+            <div className="flex flex-row items-start justify-between w-full">  
+              <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> valerie </h3>
+              <div>
+                <a href="https://valeriesouthern.com" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
+                </a>
+              </div>
             </div>
+            <hr className="mt-2 text-white w-full" />
           </div>
-          <hr className="mt-5 text-white" />
         </div>
       </div> 
       
@@ -162,18 +171,20 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
-            <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> simon </h3>
-            <div>
-              <a href="https://github.com/jaxdsout/simon" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </a>
-              <a href="https://jaxdsout.github.io/simon/" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </a>
+          <div className="flex flex-col mt-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
+            <div className="flex flex-row items-start justify-between w-full">             
+              <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> simon </h3>
+              <div>
+                <a href="https://github.com/jaxdsout/simon" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
+                </a>
+                <a href="https://jaxdsout.github.io/simon/" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
+                </a>
+              </div>
             </div>
+            <hr className="mt-2 text-white w-full" />
           </div>
-          <hr className="mt-5 text-white" />
         </div>
 
         <div className="w-full md:w-1/2 p-2">
@@ -195,18 +206,20 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between mt-3 items-center p-3 rounded-lg bg-white/5 text-white">
-            <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> qwiklok </h3>
-            <div>
-              <a href="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
-              </a>
-              <a href="https://qwiklok.onrender.com/" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
-              </a>
+          <div className="flex flex-col mt-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
+            <div className="flex flex-row items-start justify-between w-full">             
+              <h3 className="raleway-medium text-center text-[1.2rem] ml-1"> qwiklok </h3>
+              <div>
+                <a href="https://github.com/jaxdsout/qwiklok" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-code-slash text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Repository"></i>
+                </a>
+                <a href="https://qwiklok.onrender.com/" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-box-arrow-up-right text-[1.2rem] text-nowrap ml-2 mr-2 hover:text-[#eb8242] hover:drop-shadow-lg" title="Deployed"></i>
+                </a>
+              </div>
             </div>
+            <hr className="mt-2 text-white w-full" />
           </div>
-          <hr className="mt-5 text-white" />
         </div>
       </div> 
       {/* End of third row */}

@@ -2,7 +2,6 @@ import Motion from './elements/Motion';
 import About from './elements/About';
 import Projects from './elements/Projects';
 import Contact from './elements/Contact';
-import Resume from './elements/Resume';
 import { Routes, Route } from 'react-router-dom';
 import Tabs from './elements/Tabs';
 
@@ -14,7 +13,6 @@ function App () {
                 <Route path="/" element={<Tabs />}>
                     <Route path="" element={<Projects />} />
                     <Route path="about" element={<About />} />
-                    <Route path="resume" element={<Resume />} />
                     <Route path="contact" element={<Contact />} />
                 </Route>
             </Routes>
