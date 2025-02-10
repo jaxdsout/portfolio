@@ -13,11 +13,11 @@ function Projects() {
           <div className="relative group inline-block mt-2">
             <img
               src={AtlasThumb}
-              className=" block w-full rounded drop-shadow-sm transition-opacity duration-300 group-hover:opacity-20"
+              className=" block w-full rounded-2xl drop-shadow-sm transition-opacity duration-300 group-hover:opacity-20"
               alt="Atlas"
             />
             <div 
-              className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded"
+              className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://aptatlas.com/')}
             >
               <p className="select-none">CRM & list-making platform for apartment locators</p>
@@ -48,11 +48,11 @@ function Projects() {
           <div className="relative group inline-block mt-2">
             <img
               src={GalleryThumb}
-              className="block w-full rounded shadow-sm transition-opacity duration-300 group-hover:opacity-20"
+              className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
               alt="Gallery"
             />
             <div 
-              className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded"
+              className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://gallery-site.onrender.com')}
             >
               <p className="select-none">Bid-based storefront for fictitious art gallery.</p>
@@ -88,11 +88,11 @@ function Projects() {
           <div className="relative group inline-block mt-2">
             <img
               src={SubstreamThumb}
-              className="block w-full rounded shadow-sm transition-opacity duration-300 group-hover:opacity-20"
+              className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
               alt="Substream"
             />
             <div 
-              className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded"
+              className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://substream-xmo6.onrender.com/')}
             >
               <p className="select-none">Querier for content streaming locations.</p>
@@ -122,11 +122,11 @@ function Projects() {
           <div className="relative group inline-block mt-2">
             <img
               src={ValerieThumb}
-              className="block w-full rounded shadow-sm transition-opacity duration-300 group-hover:opacity-20"
+              className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
               alt="Valerie"
             />
             <div 
-              className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded"
+              className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://valeriesouthern.com/')}
             >
               <p className="select-none">Personalized real estate agent website with custom webform</p>
@@ -158,11 +158,11 @@ function Projects() {
           <div className="relative group inline-block mt-2">
             <img
               src={SimonThumb}
-              className="block w-full rounded shadow-sm transition-opacity duration-300 group-hover:opacity-20"
+              className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
               alt="Simon"
             />
             <div 
-              className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded"
+              className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://jaxdsout.github.io/simon/')}
             >
               <p className="user-select-none">Modern interpretation of classic memory game.</p>
@@ -191,11 +191,11 @@ function Projects() {
           <div className="relative group inline-block mt-2">
             <img
               src={QwiklokThumb}
-              className="block w-full rounded shadow-sm transition-opacity duration-300 group-hover:opacity-20"
+              className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
               alt="Qwiklok"
             />
             <div 
-              className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded"
+              className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://qwiklok.onrender.com/')}
             >
               <p className="user-select-none">Time-logger with admin & employee endpoints.</p>
