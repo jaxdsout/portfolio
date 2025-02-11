@@ -6,6 +6,7 @@ import SimonThumb from "../images/simon.png";
 import ValerieThumb from "../images/valerie.png";
 
 function Projects() {
+  
   return (
     <div className="mb-12 animator flex flex-col p-7 items-center justify-center">
       <div className="flex flex-wrap">
@@ -19,6 +20,7 @@ function Projects() {
             <div 
               className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://aptatlas.com/')}
+              onClick={() => window.open('https://aptatlas.com/')}
             >
               <p className="select-none">CRM & list-making platform for apartment locators</p>
               <div className="text-[4rem] text-white">
@@ -54,6 +56,7 @@ function Projects() {
             <div 
               className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://gallery-site.onrender.com')}
+              onClick={() => window.open('https://gallery-site.onrender.com')}
             >
               <p className="select-none">Bid-based storefront for fictitious art gallery.</p>
               <div className="text-[4rem] text-white">
@@ -94,6 +97,7 @@ function Projects() {
             <div 
               className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://substream-xmo6.onrender.com/')}
+              onClick={() => window.open('https://substream-xmo6.onrender.com/')}
             >
               <p className="select-none">Querier for content streaming locations.</p>
               <div className="text-[4rem] text-white">
@@ -128,6 +132,7 @@ function Projects() {
             <div 
               className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://valeriesouthern.com/')}
+              onClick={() => window.open('https://valeriesouthern.com/')}
             >
               <p className="select-none">Personalized real estate agent website with custom webform</p>
               <div className="text-[4rem] text-white">
@@ -164,6 +169,7 @@ function Projects() {
             <div 
               className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://jaxdsout.github.io/simon/')}
+              onClick={() => window.open('https://jaxdsout.github.io/simon/')}
             >
               <p className="user-select-none">Modern interpretation of classic memory game.</p>
               <div className="text-[4rem] text-white">
@@ -197,6 +203,7 @@ function Projects() {
             <div 
               className="cursor-pointer absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gray-700/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-8 text-white text-center rounded-2xl"
               onDoubleClick={() => window.open('https://qwiklok.onrender.com/')}
+              onClick={() => window.open('https://qwiklok.onrender.com/')}
             >
               <p className="user-select-none">Time-logger with admin & employee endpoints.</p>
               <div className="text-[4rem] text-white">
