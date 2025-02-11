@@ -12,7 +12,7 @@ function Contact () {
         <a className='ml-4 mr-4' href={"https://www.linkedin.com/in/jaxonsouthern/"} target="_blank" rel="noopener noreferrer">
           <i className="bi bi-linkedin transition ease-out hover:text-[#eb8242]" title="LinkedIn"></i>
         </a>
-        <a href={"https://warehouse-bkt-0810.s3.us-east-2.amazonaws.com/JaxonSouthernResume-SE.pdf"} target="_blank" rel="noopener noreferrer"> 
+        <a href={"https://misc-jax-0123.s3.us-east-2.amazonaws.com/JaxonSouthernResume.pdf"} target="_blank" rel="noopener noreferrer"> 
                 <i className="bi bi-file-earmark-person-fill transition ease-out ml-4 hover:text-[#eb8242]" title="Current Resume"></i>
         </a>
       </div>
