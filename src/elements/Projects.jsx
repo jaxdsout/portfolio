@@ -11,7 +11,7 @@ function Projects() {
     <div className="mb-12 animator flex flex-col p-7 items-center justify-center">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 p-2">
-          <div className="relative group inline-block mt-2">
+          <div className="relative group inline-block mt-2 active:translate-y-1">
             <img
               src={AtlasThumb}
               className=" block w-full rounded-2xl drop-shadow-sm transition-opacity duration-300 group-hover:opacity-20"
@@ -47,7 +47,7 @@ function Projects() {
         </div>
 
         <div className="w-full md:w-1/2 p-2">
-          <div className="relative group inline-block mt-2">
+          <div className="relative group inline-block mt-2 active:translate-y-1">
             <img
               src={GalleryThumb}
               className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
@@ -88,7 +88,7 @@ function Projects() {
 
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 p-2">
-          <div className="relative group inline-block mt-2">
+          <div className="relative group inline-block mt-2 active:translate-y-1">
             <img
               src={SubstreamThumb}
               className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
@@ -123,7 +123,7 @@ function Projects() {
         </div>
 
         <div className="w-full md:w-1/2 p-2">
-          <div className="relative group inline-block mt-2">
+          <div className="relative group inline-block mt-2 active:translate-y-1">
             <img
               src={ValerieThumb}
               className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
@@ -160,7 +160,7 @@ function Projects() {
 
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 p-2">
-          <div className="relative group inline-block mt-2">
+          <div className="relative group inline-block mt-2 active:translate-y-1">
             <img
               src={SimonThumb}
               className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"
@@ -194,7 +194,7 @@ function Projects() {
         </div>
 
         <div className="w-full md:w-1/2 p-2">
-          <div className="relative group inline-block mt-2">
+          <div className="relative group inline-block mt-2 active:translate-y-1">
             <img
               src={QwiklokThumb}
               className="block w-full rounded-2xl shadow-sm transition-opacity duration-300 group-hover:opacity-20"

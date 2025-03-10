@@ -1,5 +1,26 @@
+import { useState } from "react"
+
+const IconDiv = ({ name, type }) => {
+    const [focused, setFocused] = useState(false);
+
+    return (
+        <div className="flex flex-col">
+            <i 
+                className={`text-[4rem] p-2 devicon-${name}-${type}`}
+                onPointerOver={() => setFocused(true)} 
+                onPointerOut={() => setFocused(false)}
+            >
+            </i>
+            <span className={`${focused ? 'text-white' : 'text-[rgba(0,0,0,0)]'} text-xs`}>
+            { name === 'amazonwebservices' ? 'aws' : name === 'tailwindcss' ? 'tailwind' : name }
+            </span>
+        </div>
+    )
+}
+
 function About () {
 
+    
     return (
 
         <div className="mb-12 animator flex flex-col p-7 items-center justify-center">
@@ -24,34 +45,33 @@ function About () {
                     <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white border-[0.05rem] border-white/5">
                         <h1 className="raleway-heavy text-center mb-5 text-[2rem]">skills</h1>
                         <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 text-center mb-8">
-                            <i className="text-[4rem] p-2 devicon-python-plain" title="Python"></i>
-                            <i className="text-[4rem] p-2 devicon-javascript-plain" title="Javascript"></i>
-                            <i className="text-[4rem] p-2 devicon-rust-plain" title="Rust"></i>
-                            <i className="text-[4rem] p-2 devicon-django-plain" title="Django"></i>
-                            <i className="text-[4rem] p-2 devicon-flask-original" title="Flask"></i>
-                            <i className="text-[4rem] p-2 devicon-pandas-plain" title="Pandas"></i>
-                            <i className="text-[4rem] p-2 devicon-streamlit-plain" title="Streamlit"></i>
-                            <i className="text-[4rem] p-2 devicon-react-original" title="React"></i>
-                            <i className="text-[4rem] p-2 devicon-redux-original" title="Redux"></i>
-                            <i className="text-[4rem] p-2 devicon-express-original" title="Express"></i>
-                            <i className="text-[4rem] p-2 devicon-nodejs-plain" title="Node"></i>
-                            <i className="text-[4rem] p-2 devicon-css3-plain" title="CSS3"></i>
-                            <i className="text-[4rem] p-2 devicon-bootstrap-plain" title="Bootstrap"></i>
-                            <i className="text-[4rem] p-2 devicon-handlebars-original" title="Handlebars"></i>
-                            <i className="text-[4rem] p-2 devicon-tailwindcss-original" title="Tailwind"></i>
-                            <i className="text-[4rem] p-2 devicon-mysql-original" title="MySQL"></i>
-                            <i className="text-[4rem] p-2 devicon-postgresql-plain" title="PostgreSQL"></i>
-                            <i className="text-[4rem] p-2 devicon-sqlite-plain" title="SQLite"></i>
-                            <i className="text-[4rem] p-2 devicon-mongodb-plain" title="MongoDB"></i>
-                            <i className="text-[4rem] p-2 devicon-mongoose-original" title="Mongoose"></i>
-                            <i className="text-[4rem] p-2 devicon-rstudio-plain" title="R Studio"></i>
-                            <i className="text-[4rem] p-2 devicon-matlab-plain" title="Matlab"></i>
-                            <i className="text-[4rem] p-2 devicon-jupyter-plain" title="Jupyter"></i>
-                            <i className="text-[4rem] p-2 devicon-plotly-plain" title="Plotly"></i>
-                            <i className="text-[4rem] p-2 devicon-heroku-original" title="Heroku"></i>
-                            <i className="text-[4rem] p-2 devicon-docker-plain" title="Docker"></i>
-                            <i className="text-[4rem] p-2 devicon-postman-plain" title="Postman"></i>
-                            <i className="text-[4rem] p-2 devicon-amazonwebservices-plain-wordmark" title="AWS"></i>
+                            <IconDiv name='python' type='plain' />
+                            <IconDiv name='rust' type='plain' />
+                            <IconDiv name='django' type='plain' />
+                            <IconDiv name='flask' type='original' />
+                            <IconDiv name='pandas' type='plain' />
+                            <IconDiv name='streamlit' type='plain' />
+                            <IconDiv name='react' type='original' />
+                            <IconDiv name='redux' type='original' />
+                            <IconDiv name='express' type='original' />
+                            <IconDiv name='nodejs' type='plain' />
+                            <IconDiv name='css3' type='plain' />
+                            <IconDiv name='bootstrap' type='plain' />
+                            <IconDiv name='handlebars' type='original' />
+                            <IconDiv name='tailwindcss' type='original' />
+                            <IconDiv name='mysql' type='original' />
+                            <IconDiv name='postgresql' type='plain' />
+                            <IconDiv name='sqlite' type='plain' />
+                            <IconDiv name='mongodb' type='plain' />
+                            <IconDiv name='mongoose' type='original' />
+                            <IconDiv name='rstudio' type='plain' />
+                            <IconDiv name='matlab' type='plain' />
+                            <IconDiv name='jupyter' type='plain' />
+                            <IconDiv name='plotly' type='plain' />
+                            <IconDiv name='heroku' type='original' />
+                            <IconDiv name='devicon' type='plain' />
+                            <IconDiv name='postman' type='plain' />
+                            <IconDiv name='amazonwebservices' type='plain-wordmark' />
                         </div>
   
                         <hr className="mt-3 text-white" />
