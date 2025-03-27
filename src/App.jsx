@@ -1,24 +1,20 @@
-import Motion from './elements/Motion';
-import About from './elements/About';
-import Projects from './elements/Projects';
-import Contact from './elements/Contact';
-import { Routes, Route } from 'react-router-dom';
+import Motion from './Motion';
+import { useEffect, useState } from 'react';
+import { useNavigate, Routes, Route } from 'react-router-dom';
 import Tabs from './elements/Tabs';
+import Project from './elements/Project'
+import About from "./elements/About"
 
 function App () {
 
+
     return (
         <div className='flex flex-col items-center justify-center w-screen'>
-            <div className='flex flex-col items-center justify-center max-w-[1400px]'>
-                <Routes>
-                    <Route path="/" element={<Tabs />}>
-                        <Route path="" element={<Projects />} />
-                        <Route path="about" element={<About />} />
-                        <Route path="contact" element={<Contact />} />
-                    </Route>
-                </Routes>
-            </div>
-            
+            <Routes>
+                <Route index element={ <Tabs /> } path=''/>
+                <Route element={ <Project /> } path='/proj/:id' />
+                <Route element={ <About /> } path='/about-me' />
+            </Routes>
             <Motion />
         </div>
     )
