@@ -4,6 +4,7 @@ module.exports = {
     theme: {
       extend: {
         animation: {
+          "glow": "glow 3s linear infinite",
           "spin-slow": "spinInfinite 60s linear infinite", 
           "heartbeat": "thumpThump 2s infinite",
           "fade-in": "fade-in ease forwards 0.5s",
@@ -21,10 +22,18 @@ module.exports = {
           "ralewayMedium": ['Raleway-Medium', 'sans-serif'],
           "ralewayThin": ['Raleway-Thin', 'sans-serif'],
         },
+        dropShadow: {
+          "wedge": "0 3px 1px rgba(0, 0, 0, 0.15)",
+        },
         keyframes: {
           fadeIn: {
             "0%": { opacity: "0"},
             "100%": { opacity: "1"}
+          },
+          glow: {
+            "0%": { filter: "drop-shadow(0 0px 0px rgba(255, 255, 255, 0))" },
+            "50%": { filter: "drop-shadow(2px 2px 10px rgb(2255, 211, 163))" },
+            "100%": { filter: "drop-shadow(0 0px 0px rgba(255, 255, 255, 0))" },
           },
           spinInfinite: {
             "0%": { transform: "rotate(0deg)" },

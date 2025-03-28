@@ -12,7 +12,7 @@ function About () {
         <div className="mb-12 animator flex flex-col p-7 items-center justify-center">
             <div className="mb-4">
                 <button className='ml-4 mr-4 text-white text-[2rem]' onClick={handleBack} target="_blank" href="" rel="noopener noreferrer">
-                    <i className="bi bi-arrow-left-circle-fill transition ease-out hover:text-[#c3c3c3]" title="LinkedIn"></i>
+                    <i className="bi bi-arrow-left-circle-fill transition ease-out hover:text-[#c3c3c3]" title="Back"></i>
                 </button>
             </div>
             <div className="w-11/12 sm:w-1/2 p-2">
@@ -33,13 +33,13 @@ function About () {
             </div>  
             <div className='bg-white/5 rounded-lg mb-12 animator flex flex-row p-5 items-center justify-center text-[3rem] text-white text-nowrap border-[0.05rem] border-white/5'>
                 <a className='mr-4' href={"mailto:jaxon.southern@mac.com"}>
-                    <i className="bi bi-send-fill transition ease-out hover:text-[#c3c3c3]" title="Email"></i>
+                    <i className="bi bi-send-fill transition ease-out hover:text-[#e7a55e]" title="Email"></i>
                 </a>
                 <a className='ml-4 mr-4' href={"http://www.github.com/jaxdsout"} target="_blank" rel="noopener noreferrer">
-                    <i className="bi bi-github transition ease-out hover:text-[#c3c3c3]" title="GitHub"></i>
+                    <i className="bi bi-github transition ease-out hover:text-[#e7a55e]" title="GitHub"></i>
                 </a>
                 <a className='ml-4 mr-4' href={"https://www.linkedin.com/in/jaxonsouthern/"} target="_blank" rel="noopener noreferrer">
-                    <i className="bi bi-linkedin transition ease-out hover:text-[#c3c3c3]" title="LinkedIn"></i>
+                    <i className="bi bi-linkedin transition ease-out hover:text-[#e7a55e]" title="LinkedIn"></i>
                 </a>
             </div>         
         </div>

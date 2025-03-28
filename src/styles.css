@@ -28,6 +28,7 @@
   font-family: 'Raleway-Thin';
   src: url('../public/fonts/Raleway-Thin.ttf') format('ttf');
 }
+
 body {
   overflow-x: hidden;
   user-select: none;

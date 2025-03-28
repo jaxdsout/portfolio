@@ -35,15 +35,17 @@ function Tabs () {
                     : "bg-white"}
                 `}
             >
-                <h1 className={`${touched && "text-white"} text-[#e98f49] text-[5rem] font-ralewayBlack font-black absolute`}>JS</h1>
+                <h1 className={`${touched && "text-white"} text-[#e98f49] text-[5rem] font-ralewayBlack font-black absolute drop-shadow`}>
+                    JS
+                </h1>
                 {touched && (
-                    <div className={`flex flex-row items-center justify-center relative bg-white rounded-full px-4 px-2 top-14 drop-shadow-xl font-ralewayRegular ${touched?.id === 1 ? "text-[#5F85DB]" 
+                    <div className={`flex flex-row items-center justify-center relative bg-white rounded-full px-4 px-2 top-14 drop-shadow-wedge font-ralewayRegular ${touched?.id === 1 ? "text-[#5F85DB]" 
                         : touched?.id === 2 ? "text-[#a5d294]" 
                         : touched?.id === 3 ? "text-[#464646]" 
                         : touched?.id === 4 ? "text-[#eb8242]" 
                         : "text-white"}`}
                     >
-                        <p className='text-[0.5rem] font-ralewayRegular font-light mr-1'>        
+                        <p className='text-[0.5rem] mt-0.5 font-ralewayRegular font-light mr-1'>        
                             {touched?.type}  
                         </p>
                         <p className={`text-[1rem] font-black`}>
@@ -64,13 +66,20 @@ function Tabs () {
                         xmlns="http://www.w3.org/2000/svg"
                         onMouseEnter={() => handleTouch(proj)}
                         onTouchStart={() => handleTouch(proj)}
+                        onTouchStartCapture={() => handleClick(proj.id)}
                         onMouseLeave={() => setTouched(null)}
                         onTouchEnd={() => setTouched(null)}
                         onClick={() => handleClick(proj.id)}
-                        className={`cursor-pointer drop-shadow-xl shadow-[#e7a55e]`}
-                        style={{ animationPlayState: touched ? "paused" : "running", transform: index === 1 ? "rotate(45deg)" : 
-                            index === 2 ? "rotate(225deg)" :
-                            index === 3 ? "rotate(135deg)" : "rotate(315deg)",}}
+                        className={`cursor-pointer animate-glow`}
+                        style={{ 
+                            animationPlayState: touched ? "paused" : "running", 
+                            transform: 
+                                index === 1 ? "rotate(45deg)" : 
+                                index === 2 ? "rotate(225deg)" :
+                                index === 3 ? "rotate(135deg)" : 
+                                "rotate(315deg)",       
+                        }}
+                        
                     >
                         <path
                             d="M 10 80 Q 95 10 180 80"
@@ -85,6 +94,8 @@ function Tabs () {
                             strokeWidth="48"
                             fill="transparent"
                             strokeLinecap="round"
+                            className='drop-shadow-wedge'
+                            
                         />
                     </svg>
                 ))}
