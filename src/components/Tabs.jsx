@@ -37,21 +37,19 @@ function Tabs () {
             >
                 <h1 className={`${touched && "text-white"} text-[#e98f49] text-[5rem] font-ralewayBlack font-black absolute`}>JS</h1>
                 {touched && (
-                    <p 
-                    className={`flex flex-row items-center justify-end relative bg-white rounded-full px-4 px-2 top-14 drop-shadow-xl ${touched?.id === 1 ? "text-[#5F85DB]" 
-                    : touched?.id === 2 ? "text-[#a5d294]" 
-                    : touched?.id === 3 ? "text-[#464646]" 
-                    : touched?.id === 4 ? "text-[#eb8242]" 
-                    : "text-white"}`}
+                    <div className={`flex flex-row items-center justify-center relative bg-white rounded-full px-4 px-2 top-14 drop-shadow-xl font-ralewayRegular ${touched?.id === 1 ? "text-[#5F85DB]" 
+                        : touched?.id === 2 ? "text-[#a5d294]" 
+                        : touched?.id === 3 ? "text-[#464646]" 
+                        : touched?.id === 4 ? "text-[#eb8242]" 
+                        : "text-white"}`}
                     >
-                        <span className='text-[0.5rem] font-ralewayRegular font-base block'>        
-                            {touched?.type}
-                        </span>
-                        <span className="text-[1rem] font-ralewayRegular font-black block"> 
+                        <p className='text-[0.5rem] font-ralewayRegular font-light mr-1'>        
+                            {touched?.type}  
+                        </p>
+                        <p className={`text-[1rem] font-black`}>
                             {touched?.name}
-                        </span>
-                    </p>
-
+                        </p>
+                    </div>
                 )}          
             </div>
             <div 
@@ -65,7 +63,9 @@ function Tabs () {
                         height="190"
                         xmlns="http://www.w3.org/2000/svg"
                         onMouseEnter={() => handleTouch(proj)}
+                        onTouchStart={() => handleTouch(proj)}
                         onMouseLeave={() => setTouched(null)}
+                        onTouchEnd={() => setTouched(null)}
                         onClick={() => handleClick(proj.id)}
                         className={`cursor-pointer drop-shadow-xl shadow-[#e7a55e]`}
                         style={{ animationPlayState: touched ? "paused" : "running", transform: index === 1 ? "rotate(45deg)" : 

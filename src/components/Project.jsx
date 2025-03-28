@@ -31,14 +31,14 @@ function Project () {
     }
 
     if (id === '1') {
-        title = 'PROJECT: ATLAS';
+        title = 'ATLAS';
         content = (
             <p>CRM & list-making platform for apartment locators</p>
         );
     }
 
     if (id === '2') {
-        title = 'PROJECT: SUBSTREAM';
+        title = 'SUBSTREAM';
         content = (
             <p className="mb-3">
                 {/* Add content for Project: SUBSTREAM */}
@@ -47,7 +47,7 @@ function Project () {
     }
 
     if (id === '3') {
-        title = 'PROJECT: GALLERY';
+        title = 'GALLERY';
         content = (
             <p className="mb-3">
                 {/* Add content for Project: GALLERY */}
