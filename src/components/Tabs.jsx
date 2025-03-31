@@ -55,11 +55,10 @@ function Tabs () {
                         xmlns="http://www.w3.org/2000/svg"
                         onMouseEnter={() => handleTouch(proj)}
                         onTouchStart={() => handleTouch(proj)}
-                        onTouchStartCapture={() => handleTouch(proj)}
                         onMouseLeave={() => setTouched(null)}
                         onTouchEnd={() => setTouched(null)}
-                        onTouchEndCapture={() => setTouched(null)}
-                        onClick={() => handleClick(proj.id)}
+                        onClick={() => handleTouch(proj)}
+                        onDoubleClick={() => handleClick(proj.id)}
                         className={`cursor-pointer animate-glow`}
                         style={{ 
                             animationPlayState: touched ? "paused" : "running", 
