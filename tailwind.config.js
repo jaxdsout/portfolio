@@ -5,7 +5,8 @@ module.exports = {
       extend: {
         animation: {
           "glow": "glow 3s linear infinite",
-          "spin-slow": "spinInfinite 30s linear infinite", 
+          "spin-slow": "spinInfinite 20s linear infinite", 
+          "bounce": "bouncy 4s linear infinite",
           "fade-in": "fade-in ease forwards 0.5s",
           "wave1": 'wave 12s ease-in-out infinite',
           "wave2": 'wave 8s ease-in-out infinite 0.5s',
@@ -34,10 +35,16 @@ module.exports = {
             "50%": { filter: "drop-shadow(2px 2px 10px rgb(255, 208, 108))" },
             "100%": { filter: "drop-shadow(0 0px 0px rgba(255, 255, 255, 0))" },
           },
+          bouncy: {
+            "0%": { transform: "scale(0.95) translateY(0)"},
+            "50%": { transform: "scale(1.0) translateY(3px)"},
+            "100%": { transform: "scale(0.95) translateY(0)"},
+
+          },
           spinInfinite: {
-            "0%": { transform: "rotate(0deg) scale(0.95)" },
-            "50%": { transform: "rotate(180deg) scale(1.0)"},
-            "100%": { transform: "rotate(360deg) scale(0.95)" },
+            "0%": { transform: "rotate(0deg)" },
+            "50%": { transform: "rotate(180deg)"},
+            "100%": { transform: "rotate(360deg)" },
           },
           wave: {
             '0%': { transform: 'translateY(0)' },
