@@ -5,8 +5,7 @@ module.exports = {
       extend: {
         animation: {
           "glow": "glow 3s linear infinite",
-          "spin-slow": "spinInfinite 60s linear infinite", 
-          "heartbeat": "thumpThump 2s infinite",
+          "spin-slow": "spinInfinite 30s linear infinite", 
           "fade-in": "fade-in ease forwards 0.5s",
           "wave1": 'wave 12s ease-in-out infinite',
           "wave2": 'wave 8s ease-in-out infinite 0.5s',
@@ -36,13 +35,9 @@ module.exports = {
             "100%": { filter: "drop-shadow(0 0px 0px rgba(255, 255, 255, 0))" },
           },
           spinInfinite: {
-            "0%": { transform: "rotate(0deg)" },
-            "100%": { transform: "rotate(360deg)" },
-          },
-          thumpThump: {
-            "0%": { animationTimingFunction: "ease-out", transform: "scale(0.95)"},
-            "70%": { animationTimingFunction: "ease-in", transform: "scale(1)"},
-            "100%": { animationTimingFunction: "ease-out", transform: "scale(0.95)"},
+            "0%": { transform: "rotate(0deg) scale(0.95)" },
+            "50%": { transform: "rotate(180deg) scale(1.0)"},
+            "100%": { transform: "rotate(360deg) scale(0.95)" },
           },
           wave: {
             '0%': { transform: 'translateY(0)' },

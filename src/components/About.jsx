@@ -9,7 +9,7 @@ function About () {
     
     return (
 
-        <div className="mb-12 animator flex flex-col p-7 items-center justify-center">
+        <div className="animate-fade-in mb-12 flex flex-col p-7 items-center justify-center">
             <div className="mb-4">
                 <button className='ml-4 mr-4 text-white text-[2rem]' onClick={handleBack} target="_blank" href="" rel="noopener noreferrer">
                     <i className="bi bi-arrow-left-circle-fill transition ease-out hover:text-[#c7713c]" title="Back"></i>
