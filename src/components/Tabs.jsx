@@ -6,6 +6,14 @@ function Tabs () {
     const navigate = useNavigate();
     const [touched, setTouched] = useState(null);
 
+    const handleInteraction = (proj) => setTouched(proj);
+
+    const handleClick = (id) => {
+        navigate(id !== 4 ? `/proj/${id}` : "/about-me/");
+    }
+
+    const handleEnd = () => setTouched(null);
+
     const projs = [
         {"id": 1, "name": "ATLAS", "type": "PROJ", "color": "#5F85DB"},
         {"id": 2, "name": "SUBSTREAM", "type": "PROJ", "color": "#a5d294"},
@@ -13,19 +21,6 @@ function Tabs () {
         {"id": 4, "name": "ME", "type": "ABOUT", "color": "#eb8242"},
     ]
 
-    const handleTouch = (proj) => {
-        setTouched(proj);
-    }
-
-    const handleClick = (id) => {
-        if (id !== 4) {
-            navigate(`/proj/${id}`);
-        } else {
-            navigate('/about-me/')
-        }
-    }
-
-    console.log(`bg-[${touched?.color}]`)
     return (
         <div className={`flex flex-col items-center justify-center z-10 h-screen animate-fade-in`}>
             <div className={`z-20 flex flex-col items-center justify-center absolute h-44 w-44 rounded-full drop-shadow-xl`} style={{ backgroundColor: touched ? touched.color : "white" }}>
@@ -56,12 +51,11 @@ function Tabs () {
                         width="190"
                         height="190"
                         xmlns="http://www.w3.org/2000/svg"
-                        onMouseEnter={() => handleTouch(proj)}
-                        onTouch={() => handleTouch(proj)}
-                        onTouchMove={() => handleTouch(proj)}
-                        onMouseLeave={() => setTouched(null)}
-                        onTouchEnd={() => setTouched(null)}
-                        onMouseDown={() => handleClick(proj.id)}
+                        onMouseEnter={() => handleInteraction(proj)}
+                        onMouseLeave={handleEnd}
+                        onTouchStart={() => handleInteraction(proj)}
+                        onTouchEnd={handleEnd}
+                        onClick={() => handleClick(proj.id)}
                         className={`cursor-pointer animate-glow`}
                         style={{ 
                             animationPlayState: touched ? "paused" : "running", 
@@ -81,7 +75,6 @@ function Tabs () {
                             strokeLinecap="round"
                             className='drop-shadow-wedge'
                         />
-
                     </svg>
                 ))}
             </div>
