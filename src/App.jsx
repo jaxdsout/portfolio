@@ -1,8 +1,7 @@
 import Motion from './components/Motion';
-import { useEffect, useState } from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Tabs from './components/Tabs';
-import Project from './components/Project'
+import Content from './components/Content'
 import About from "./components/About"
 
 function App () {
@@ -13,7 +12,7 @@ function App () {
             <div className='relative'>
                 <Routes>
                     <Route index element={ <Tabs /> } path=''/>
-                    <Route element={ <Project /> } path='/proj/:id' />
+                    <Route element={ <Content /> } path='/proj/:id' />
                     <Route element={ <About /> } path='/about-me' />
                 </Routes>
             </div>

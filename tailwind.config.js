@@ -32,7 +32,7 @@ module.exports = {
           },
           glow: {
             "0%": { filter: "drop-shadow(0 0px 0px rgba(255, 255, 255, 0))" },
-            "50%": { filter: "drop-shadow(2px 2px 10px rgb(2255, 211, 163))" },
+            "50%": { filter: "drop-shadow(2px 2px 10px rgb(255, 208, 108))" },
             "100%": { filter: "drop-shadow(0 0px 0px rgba(255, 255, 255, 0))" },
           },
           spinInfinite: {

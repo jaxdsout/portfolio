@@ -1,17 +1,16 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 
 function Tabs () {
-    const location = useLocation();
     const navigate = useNavigate();
     const [touched, setTouched] = useState(null);
 
     const projs = [
-        {"id": 1, "name": "ATLAS", "type": "PROJECT"},
-        {"id": 2, "name": "SUBSTREAM", "type": "PROJECT"},
-        {"id": 3, "name": "GALLERY", "type": "PROJECT"},
-        {"id": 4, "name": "ME", "type": "ABOUT"},
+        {"id": 1, "name": "ATLAS", "type": "PROJECT", "color": "#5F85DB"},
+        {"id": 2, "name": "SUBSTREAM", "type": "PROJECT", "color": "#a5d294"},
+        {"id": 3, "name": "GALLERY", "type": "PROJECT", "color": "#464646"},
+        {"id": 4, "name": "ME", "type": "ABOUT", "color": "#eb8242"},
     ]
 
     const handleTouch = (proj) => {
@@ -25,26 +24,16 @@ function Tabs () {
             navigate('/about-me/')
         }
     }
+
+    console.log(`bg-[${touched?.color}]`)
     return (
         <div className={`flex flex-col items-center justify-center rounded-full z-10 h-screen`}>
-            <div className={`z-20 flex flex-col items-center justify-center absolute h-48 w-48 rounded-full drop-shadow-xl
-                ${touched?.id === 1 ? "bg-[#5F85DB]" 
-                    : touched?.id === 2 ? "bg-[#a5d294]" 
-                    : touched?.id === 3 ? "bg-[#464646]" 
-                    : touched?.id === 4 ? "bg-[#eb8242]" 
-                    : "bg-white"}
-                `}
-            >
+            <div className={`z-20 flex flex-col items-center justify-center absolute h-48 w-48 rounded-full drop-shadow-xl`} style={{ backgroundColor: touched ? touched.color : "white"}}>
                 <h1 className={`${touched && "text-white"} text-[#e98f49] text-[5rem] font-ralewayBlack font-black absolute drop-shadow`}>
                     JS
                 </h1>
                 {touched && (
-                    <div className={`flex flex-row items-center justify-center relative bg-white rounded-full px-4 px-2 top-14 drop-shadow-wedge font-ralewayRegular ${touched?.id === 1 ? "text-[#5F85DB]" 
-                        : touched?.id === 2 ? "text-[#a5d294]" 
-                        : touched?.id === 3 ? "text-[#464646]" 
-                        : touched?.id === 4 ? "text-[#eb8242]" 
-                        : "text-white"}`}
-                    >
+                    <div className={`flex flex-row items-center justify-center relative bg-white rounded-full px-4 px-2 top-14 drop-shadow-wedge font-ralewayRegular`} style={{ color: touched ? touched.color : "white"}}>
                         <p className='text-[0.5rem] mt-0.5 font-ralewayRegular font-light mr-1'>        
                             {touched?.type}  
                         </p>
@@ -83,19 +72,11 @@ function Tabs () {
                     >
                         <path
                             d="M 10 80 Q 95 10 180 80"
-                            stroke={touched?.id === proj.id 
-                                ? proj.id === 1 ? "#5F85DB" 
-                                : proj.id === 2 ? "#a5d294" 
-                                : proj.id === 3 ? "#464646" 
-                                : proj.id === 4 ? "#eb8242" 
-                                : "white" 
-                                : "white"
-                            }
+                            stroke={touched?.id === proj.id ? `${proj.color}` : "white" }
                             strokeWidth="48"
                             fill="transparent"
                             strokeLinecap="round"
                             className='drop-shadow-wedge'
-                            
                         />
                     </svg>
                 ))}
