@@ -23,10 +23,10 @@ function Tabs () {
 
     return (
         <div className={`flex flex-col items-center justify-center z-10 h-screen animate-fade-in`}>
-            <div className={`z-20 flex flex-col items-center justify-center absolute h-48 w-48 rounded-full drop-shadow-xl`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)" }}>
+            <div className={`z-20 flex flex-col items-center justify-center absolute h-48 w-48 rounded-full drop-shadow-wedge`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)" }}>
                 <h1 
-                    className={`text-[#e1a984] text-[4rem] font-ralewayBlack font-black absolute mix-blend-overlay`}
-                    style={{ color: touched && "white" }}
+                    className={`text-[4rem] font-ralewayBlack font-black absolute`}
+                    style={{ color: touched ? "white" : "#e7a55e", mixBlendMode: touched ? "normal" : "overlay" }}
                 >
                     JS
                 </h1>
@@ -51,7 +51,7 @@ function Tabs () {
                         width="190"
                         height="180"
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`cursor-pointer animate-glow`}
+                        className={`cursor-pointer animate-glow drop-shadow-wedge`}
                         style={{ 
                             animationPlayState: touched ? "paused" : "running", 
                             transform: 

@@ -30,6 +30,8 @@ function Content () {
                     <p>
                         The web app is built with React and Redux, ensuring a dynamic and efficient user experience with smooth state management. It leverages Django for a custom backend API and uses Tailwind CSS to create a visually distinct and modern interface.
                     </p>
+                    <hr className="mt-3 text-white" />
+
                 </>            
             );
             break;
