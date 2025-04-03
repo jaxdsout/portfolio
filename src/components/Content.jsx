@@ -1,17 +1,31 @@
 import { useParams } from "react-router-dom"
+import { useState } from "react";
 import Project from "./Project";
 import GalleryThumb from "../elements/images/gallery.png";
 import SubstreamThumb from "../elements/images/substream.png";
 import AtlasThumb from "../elements/images/atlas.png";
 
+
 function Content () {
     const { id } = useParams();
-  
+    const [copied, setCopied] = useState(false);
+
     let content = null;
     let thumbnail = null;
     let title = '';
     let links = [];
     let accent = '';
+
+    const copyClipboard = (type) => {
+        let copyText = null;
+        if (type === 'USERNAME') { copyText = process.env.REACT_APP_SANDBOX_USER } else { copyText = process.env.REACT_APP_SANDBOX_PASSWORD };
+        navigator.clipboard.writeText(copyText);
+        setCopied(true);
+
+        setTimeout(() => {
+            setCopied(false)
+        }, 1000);
+    }
 
     switch (id) {
         case '1':
@@ -27,9 +41,18 @@ function Content () {
                     <p className="pb-4">
                         At its core, Atlas is a powerful list-making tool. However, it was built with scalability in mind, and new features have been continuously integrated since its initial development. The platform now includes deal (invoice) tracking, monthly earnings tables, a task manager, and a net-effective rent calculator. The latest addition is a commissions database, which helps users track current payout rates for apartment communities in their area.
                     </p>
-                    <p>
+                    <p className="pb-4">
                         The web app is built with React and Redux, ensuring a dynamic and efficient user experience with smooth state management. It leverages Django for a custom backend API and uses Tailwind CSS to create a visually distinct and modern interface.
                     </p>
+                    <p className="pb-4">
+                        To login and access sandbox account, use the following credentials (click & they will be copied to your clipboard):
+                    </p>
+                    <div className="flex flex-col items-center justify-center relative mt-2">
+                        {copied ? <i className="text-xs absolute -top-5 text-red-300 text-nowrap transition-opacity duration-300">COPIED TO CLIPBOARD</i> : " "}
+                        <b onClick={() => copyClipboard('USERNAME')} className="mb-2">USERNAME</b>
+                        <b onClick={() => copyClipboard('PASSWORD')}>PASSWORD</b>
+                    </div>
+                  
                     <hr className="mt-3 text-white" />
 
                 </>            

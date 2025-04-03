@@ -3,14 +3,18 @@ import { useState } from "react";
 
 function Project ({ title, children, links, thumbnail, accent }) {
     const [hovered, setHovered] = useState(null);
+    const [clicked, setClicked] = useState(false);
     const navigate = useNavigate();
 
     const handleBack = () => {
-        navigate('/');
+        setClicked(true); 
+        setTimeout(() => {
+            navigate('/');;
+        }, 200);
     }
 
     return (
-        <div className="mb-12 animate-fade-in flex flex-col p-7 items-center justify-center">
+        <div className={`mb-12 flex flex-col p-7 items-center justify-center transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"}`}>
             <div className="mb-4">
                 <button 
                     className='ml-4 mr-4 transition ease-out' 

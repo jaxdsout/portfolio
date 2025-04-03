@@ -5,11 +5,15 @@ import { useState } from 'react';
 function Tabs () {
     const navigate = useNavigate();
     const [touched, setTouched] = useState(null);
+    const [clicked, setClicked] = useState(null);
 
     const handleInteraction = (proj) => setTouched(proj);
 
     const handleClick = (id) => {
-        navigate(id !== 4 ? `/proj/${id}` : "/about-me/");
+        setClicked(true); 
+        setTimeout(() => {
+            navigate(id !== 4 ? `/proj/${id}` : "/about-me/");
+        }, 200);
     }
 
     const handleEnd = () => setTouched(null);
@@ -22,7 +26,7 @@ function Tabs () {
     ]
 
     return (
-        <div className={`flex flex-col items-center justify-center z-10 h-screen animate-fade-in`}>
+        <div className={`flex flex-col items-center justify-center z-10 h-screen transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"}`}>
             <div className={`z-20 flex flex-col items-center justify-center absolute h-48 w-48 rounded-full drop-shadow-wedge`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)" }}>
                 <h1 
                     className={`text-[4rem] font-ralewayBlack font-black absolute`}
