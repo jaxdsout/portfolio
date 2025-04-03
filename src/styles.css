@@ -33,3 +33,10 @@ body {
   overflow-x: hidden;
   user-select: none;
 }
+
+.auto-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
+  scrollbar-gutter: 200px;
+}
