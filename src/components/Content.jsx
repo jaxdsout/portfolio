@@ -34,7 +34,7 @@ function Content () {
             thumbnail = AtlasThumb;
             accent = '#5F85DB';
             content = (
-                <p className="pb-4">
+                <p className="pb-4 relative">
                     Apartment locators are real estate agents who specialize in leasing within corporate apartment communities and buildings. While the listings they recommend are publicly available online, there’s no streamlined way to share them with clients. Some locators rely on outdated systems, while others simply compile links into an email. This challenge led to the creation of <b>Atlas.</b>
                     <br></br>
                     <br></br>
@@ -47,7 +47,7 @@ function Content () {
                     To login and access sandbox account, use the following credentials (click & they will be copied to your clipboard):
                     <br></br>
                     <br></br>
-                    {copied ? <i className="text-xs absolute -top-5 text-red-300 text-nowrap transition-opacity duration-300">COPIED TO CLIPBOARD</i> : " "}
+                    {copied ? <i className="text-xs absolute bottom-20 left-28 text-red-300 text-nowrap transition-opacity duration-300">COPIED TO CLIPBOARD</i> : " "}
                     <b onClick={() => copyClipboard('USERNAME')} className="mb-2">USERNAME</b>
                     <br></br>
                     <br></br>

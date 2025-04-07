@@ -14,7 +14,7 @@ function Project ({ title, children, links, thumbnail, accent }) {
     }
 
     return (
-        <div className={`flex flex-col p-7 items-center justify-center transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"}`}>
+        <div className={`transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"} flex flex-col p-3 mt-3 items-center justify-center max-w-[500px]`}>
             <div>
                 <button 
                     className='ml-4 mr-4 transition ease-out' 
@@ -34,13 +34,16 @@ function Project ({ title, children, links, thumbnail, accent }) {
             <div className="w-11/12 md:w-1/2 p-1 min-w-[350px] md:min-w-[500px]">
                 <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white border-[0.05rem] border-white/5">
                     <div className="flex flex-row items-center justify-between w-full mt-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
-                        <h3 className="font-ralewayBlack font-black tracking-wider text-[1.2rem] ml-1"> {title} </h3>
+                        <h3 className="font-ralewayBlack font-black tracking-wider text-[1.2rem] ml-1"> 
+                            {title} 
+                        </h3>
                         <div className="flex flex-row items-start">
                             <a 
                                 href={links[1]} 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
-                                style={{ color: hovered === "repo" ? accent : "white" }} 
+                                style={{ color: hovered === "repo" ? accent : "white" }}
+                                className="mr-3 sm:mr-0" 
                                 onMouseEnter={() => setHovered('repo')} 
                                 onMouseLeave={() => setHovered(null)} 
                             >
@@ -75,10 +78,11 @@ function Project ({ title, children, links, thumbnail, accent }) {
                             onClick={() => window.open(links[0])}
                         />
                     </div>
-                    <div className="flex flex-col items-center text-center py-3 px-6 mt-3 bg-black/40 rounded-xl text-sm h-[350px] auto-scrollbar">
+                    <div className="flex flex-col items-center text-center py-4 px-2 mt-3 bg-black/40 rounded-xl text-sm h-[350px]">
+                        <div className="overflow-y-auto auto-scrollbar w-full h-full pt-2 px-4">
                             {children}
-                            <hr className="mt-3 mb-3 text-white w-full" />
-                    
+                        </div>
+                        <hr className="mt-3 mb-3 text-white w-full" />
                     </div>
                 </div>
             </div>

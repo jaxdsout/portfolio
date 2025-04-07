@@ -9,7 +9,7 @@ function App () {
 
     return (
         <div className='flex flex-col items-center justify-center'>
-            <div className='relative'>
+            <div className='relative h-screen'>
                 <Routes>
                     <Route index element={ <Tabs /> } path=''/>
                     <Route element={ <Content /> } path='/proj/:id' />

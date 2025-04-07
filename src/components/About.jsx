@@ -4,6 +4,7 @@ import { useState } from "react";
 function About () {
     const navigate = useNavigate();
     const [clicked, setClicked] = useState(false);
+    const [hovered, setHovered] = useState(null);
 
     const handleBack = () => {
         setClicked(true); 
@@ -14,38 +15,49 @@ function About () {
     
     return (
 
-        <div className={`transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"} mb-12 flex flex-col p-7 items-center justify-center`}>
-        <div className="mb-4">
-            <button className='ml-4 mr-4 text-white text-[2rem]' onClick={handleBack} target="_blank" href="" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-10 hover:text-[#c7713c]">
-                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clipRule="evenodd" />
-                </svg>
-            </button>
-        </div>
-        <div className="w-11/12 sm:w-1/2 p-2 rounded-lg">
-            <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white border-[0.05rem] border-white/5">
-                <div className="flex flex-col mt-3 mb-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
-                    <h3 className="font-ralewayBlack font-black tracking-wider text-[1.2rem] ml-1"> ABOUT ME </h3>                        
-                    <hr className="mt-2 text-white w-full" />
-                </div>
-                <div className="px-4 auto-scrollbar h-[500px]">
-                    <p className="mb-3">
-                        Hello! I'm a junior software engineer with years of professional experience crafting solutions to solve problems outside of tech. In every job, my approach has been to be as efficient as possible while still tailoring my solutions to each client. My background is primarily in the real estate and construction domains, but I am bringing the same discipline and creativity to my emerging software career.
-                        <br></br>
-                        <br></br>
-                        On a mission to expand my knowledge and horizons, I completed a part-time engineering bootcamp at General Assembly in early 2024 while continuing my current job as a real-estate agent. During the six-month course, I developed an unexpected affinity for creating databases and APIs, as well as a deep appreciation for the ever-growing power of data. This ultimately led me to earn a certificate in Data Analytics from Google a few months later. Since then, I have strengthened my foundation in both web and systems languages through online courses.
-                        <br></br>
-                        <br></br>
-                        I have worked with multiple tech stacks, giving me extensive exposure to various backend and frontend technologies. My skills are strong in JavaScript, Python, and SQL, and I am continuously honing my abilities in each of them. However, lately, I have been learning C++ and Rust to gain a deeper understanding of the entire spectrum of software development. I am committed to growing as an engineer and data enthusiast, and I truly aspire to make this career change the last one. My current goal is to leverage my background in relationship management and project management to find synergistic roles that challenge me and push me beyond my comfort zone.
-                        <br></br>
-                        <br></br>
-                        <span className="text-center">Based out of Houston, TX</span>
-                    </p>
-                    <hr className="mt-3 text-white" />
-                </div>
-            
+        <div className={`transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"} flex flex-col p-3 mt-3 items-center justify-center max-w-[500px]`}>
+            <div>
+                <button 
+                    className='ml-4 mr-4 transition ease-out' 
+                    style={{ color: hovered === "back" ? "#eb8242" : "white" }} 
+                    onClick={handleBack} 
+                    onMouseEnter={() => setHovered('back')} 
+                    onMouseLeave={() => setHovered(null)}
+                    target="_blank" 
+                    href="" 
+                    rel="noopener noreferrer"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-10">
+                        <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clipRule="evenodd" />
+                    </svg>
+                </button>
             </div>
-        </div>  
+            <div className="w-11/12 md:w-1/2 p-1 min-w-[350px] md:min-w-[500px]">
+                <div className="bg-white/5 p-8 mb-6 rounded-lg text-sm text-white border-[0.05rem] border-white/5">
+                    <div className="flex flex-row items-center justify-between w-full mt-3 items-start p-3 rounded-lg bg-white/5 text-white border-[0.05rem] border-white/5">
+                        <h3 className="font-ralewayBlack font-black tracking-wider text-[1.2rem] ml-1">  ABOUT ME </h3>                        
+                    </div>
+                    <div className="flex flex-col items-center text-center py-4 px-2 mt-3 bg-white/10 rounded-xl text-sm h-[500px]">                        
+                        <div className="overflow-y-auto auto-scrollbar w-full h-full pt-2 px-4">
+                            <p className="mb-3">
+                                    Hello! I'm a junior software engineer with years of professional experience crafting solutions to solve problems outside of tech. In every job, my approach has been to be as efficient as possible while still tailoring my solutions to each client. My background is primarily in the real estate and construction domains, but I am bringing the same discipline and creativity to my emerging software career.
+                                    <br></br>
+                                    <br></br>
+                                    On a mission to expand my knowledge and horizons, I completed a part-time engineering bootcamp at General Assembly in early 2024 while continuing my current job as a real-estate agent. During the six-month course, I developed an unexpected affinity for creating databases and APIs, as well as a deep appreciation for the ever-growing power of data. This ultimately led me to earn a certificate in Data Analytics from Google a few months later. Since then, I have strengthened my foundation in both web and systems languages through online courses.
+                                    <br></br>
+                                    <br></br>
+                                    I have worked with multiple tech stacks, giving me extensive exposure to various backend and frontend technologies. My skills are strong in JavaScript, Python, and SQL, and I am continuously honing my abilities in each of them. However, lately, I have been learning C++ and Rust to gain a deeper understanding of the entire spectrum of software development. I am committed to growing as an engineer and data enthusiast, and I truly aspire to make this career change the last one. My current goal is to leverage my background in relationship management and project management to find synergistic roles that challenge me and push me beyond my comfort zone.
+                                    <br></br>
+                                    <br></br>
+                                    <span className="text-center">Based out of Houston, TX</span>
+                                </p>
+                            </div>
+                        
+                        <hr className="mt-3 mb-3 text-white w-full" />
+                    </div>
+                
+                </div>
+            </div>  
             <div className='bg-white/5 rounded-lg animator flex flex-row p-6 items-center justify-center text-white text-nowrap border-[0.05rem] border-white/5'>
                 <a className='mr-4' href={"mailto:jaxon.southern@mac.com"}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" className="bi bi-send-fill hover:text-[#c7713c]" viewBox="0 0 16 16">

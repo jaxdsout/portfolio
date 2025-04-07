@@ -27,7 +27,7 @@ function Tabs () {
 
     return (
         <div className={`flex flex-col items-center justify-center z-10 h-screen transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"}`}>
-            <div className={`z-20 flex flex-col items-center justify-center absolute h-48 w-48 rounded-full drop-shadow-wedge`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)" }}>
+            <div className={`z-20 flex flex-col items-center justify-center absolute h-[11rem] w-[11rem] rounded-full drop-shadow-wedge`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)" }}>
                 <h1 
                     className={`text-[4rem] font-ralewayBlack font-black absolute`}
                     style={{ color: touched ? "white" : "#e7a55e", mixBlendMode: touched ? "normal" : "overlay" }}
@@ -35,14 +35,10 @@ function Tabs () {
                     JS
                 </h1>
                 {touched && (
-                    <div className={`flex flex-row items-center justify-center relative bg-white rounded-full px-3 px-2 top-12 drop-shadow-wedge font-ralewayRegular`} style={{ color: touched ? touched.color : "white"}}>
-                        <p className='text-[0.75rem] font-ralewayRegular font-light mr-1'>        
-                            {touched?.type}  
-                        </p>
-                        <p className={`text-[.85rem] font-black`}>
-                            {touched?.name}
-                        </p>
-                    </div>
+                    <p className='relative bg-white px-2 font-ralewayRegular drop-shadow-wedge rounded-full font-normal inline-block text-[.80rem] top-10' style={{ color: touched ? touched.color : "white"}}>        
+                        <span className='mr-1'>{touched?.type}</span>  
+                        <span className={`font-black `}>{touched?.name}</span>
+                    </p>
                 )}          
             </div>
             <div 
