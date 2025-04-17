@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import ProjectNav from "./ProjectNav";
+import ProjectNav from "./Nav";
 
 function Project ({ title, children, links, thumbnail, accent }) {
 
