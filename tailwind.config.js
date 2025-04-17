@@ -7,7 +7,6 @@ module.exports = {
           "glow": "glow 3s linear infinite",
           "spin-slow": "spinInfinite 20s linear infinite", 
           "bounce": "bouncy 4s linear infinite",
-          "fade-out": "fadeOut ease-out 1s",
           "wave1": 'wave 12s ease-in-out infinite',
           "wave2": 'wave 8s ease-in-out infinite 0.5s',
           "wave3": 'wave 14s ease-in-out infinite 1s',
@@ -26,11 +25,6 @@ module.exports = {
           "wedge": "0 3px 1px rgba(0, 0, 0, 0.15)",
         },
         keyframes: {
-          fadeOut: {
-            "0%": { opacity: "1"},
-            "50%": { opacity: "0.5"},
-            "100%": { opacity: "0"}
-          },
           glow: {
             "0%": { filter: "drop-shadow(0 0px 0px rgba(255, 255, 255, 0))" },
             "50%": { filter: "drop-shadow(2px 2px 10px rgb(255, 208, 108))" },
