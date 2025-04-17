@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 
-function Tabs () {
+function Cheeto () {
     const navigate = useNavigate();
     const [touched, setTouched] = useState(null);
     const [clicked, setClicked] = useState(null);
@@ -30,7 +30,7 @@ function Tabs () {
             <div className={`z-20 flex flex-col items-center justify-center absolute h-[11rem] w-[11rem] rounded-full drop-shadow-wedge`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)" }}>
                 <h1 
                     className={`text-[4rem] font-ralewayBlack font-black absolute`}
-                    style={{ color: touched ? "white" : "#e7a55e", mixBlendMode: touched ? "normal" : "overlay" }}
+                    style={{ color: touched ? "white" : "#e7a55e", mixBlendMode: touched ? "normal" : "lighten" }}
                 >
                     JS
                 </h1>
@@ -85,4 +85,4 @@ function Tabs () {
     )
 }
 
-export default Tabs
+export default Cheeto

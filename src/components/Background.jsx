@@ -43,7 +43,7 @@ export default function Background () {
     return (
             <motion.svg 
                 viewBox="0 0 900 600" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" version="1.1"
-                className="fixed -z-10 transition-colors duration-700"
+                className="fixed transition-colors duration-700"
             >
                 <rect width="100%" height="100%" fill={blended6} />
                 <path className="animate-wave1" d="M0 150L18.8 149.2C37.7 148.3 75.3 146.7 112.8 136.5C150.3 126.3 187.7 107.7 225.2 117.7C262.7 127.7 300.3 166.3 337.8 170.2C375.3 174 412.7 143 450.2 124.8C487.7 106.7 525.3 101.3 562.8 102C600.3 102.7 637.7 109.3 675.2 121.8C712.7 134.3 750.3 152.7 787.8 157.8C825.3 163 862.7 155 881.3 151L900 147L900 601L881.3 601C862.7 601 825.3 601 787.8 601C750.3 601 712.7 601 675.2 601C637.7 601 600.3 601 562.8 601C525.3 601 487.7 601 450.2 601C412.7 601 375.3 601 337.8 601C300.3 601 262.7 601 225.2 601C187.7 601 150.3 601 112.8 601C75.3 601 37.7 601 18.8 601L0 601Z" fill={blended0}></path>

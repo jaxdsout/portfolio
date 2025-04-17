@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Tabs from './components/Tabs';
+import Cheeto from './components/Cheeto';
 import Content from './components/Content'
 import About from "./components/About"
 import { AnimatePresence, motion } from 'framer-motion';
@@ -10,8 +10,8 @@ function App () {
 
 
     return (
-        <div className='flex flex-col items-center justify-center'>
-            <div className='flex flex-col items-center justify-center' style={{ zIndex: 4 }}> 
+        <>
+            <div className='w-screen fixed top-0 left-0 flex flex-col items-center justify-center' style={{ zIndex: 2 }}> 
                 <AnimatePresence mode="wait">
 
                 <Routes location={location} key={location.pathname}>
@@ -23,7 +23,7 @@ function App () {
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.2 }}
                         >
-                            <Tabs /> 
+                            <Cheeto /> 
                         </motion.div>
                      } path=''/>
                     <Route element={ 
@@ -52,10 +52,10 @@ function App () {
                 </AnimatePresence>
             </div>
 
-            <div className='fixed top-0 left-0 object-cover'>
+            <div className='fixed top-0 left-0 object-cover' style={{ zIndex: 1 }}>
                 <Background />
             </div>
-        </div>
+        </>
     )
 }
 
