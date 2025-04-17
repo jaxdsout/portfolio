@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 
 function Cheeto () {
@@ -45,9 +45,10 @@ function Cheeto () {
                 className={`grid grid-cols-2 relative z-20 animate-spin-slow`}
                 style={{ animationPlayState: touched ? "paused" : "running" }}
             >
-                {projs.map((proj, index) => (
+                {projs.map((proj, index, ref) => (
                     <svg
                         key={proj.id}
+                        ref={ref}
                         width="190"
                         height="180"
                         xmlns="http://www.w3.org/2000/svg"
