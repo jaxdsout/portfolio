@@ -8,7 +8,7 @@ function Project ({ title, children, links, thumbnail, accent }) {
             <motion.div className="h-full flex flex-col items-center justify-center p-8 rounded-lg text-sm text-white" style={{ zIndex: 4 }}>
                 <Nav title={title} accent={accent} links={links}/>
                 <div className="flex flex-col md:flex-row justify-center px-6 pt-2 items-center">
-                    <div className="w-[320px] h-[320px] md:w-[380px] md:h-[380px] overflow-hidden rounded-2xl drop-shadow-sm cursor-pointer active:translate-y-1 my-2 md:mx-2">
+                    <div className="w-[320px] h-[250px] md:w-[380px] md:h-[380px] overflow-hidden rounded-2xl drop-shadow-sm cursor-pointer active:translate-y-1 my-2 md:mx-2">
                         <img
                             src={thumbnail}
                             className="w-full h-full object-cover hover:opacity-60 active:opacity-60"
