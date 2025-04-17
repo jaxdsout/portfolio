@@ -10,7 +10,7 @@ function App () {
 
 
     return (
-        <div className='flex flex-col items-center justify-center h-screen'>
+        <div className='flex flex-col items-center justify-center'>
             <div className='flex flex-col items-center justify-center' style={{ zIndex: 4 }}> 
                 <AnimatePresence mode="wait">
 

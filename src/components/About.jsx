@@ -8,12 +8,12 @@ function About () {
     
     return (
         <AnimatePresence>
-            <motion.div className="flex flex-col items-center justify-center bg-white/5 p-8 rounded-lg text-sm text-white border-[0.05rem] border-white/5" style={{ zIndex: 4 }}>
+            <motion.div className="h-screen flex flex-col items-center justify-center p-8 rounded-lg text-sm text-white" style={{ zIndex: 4 }}>
                 <Nav title={"ABOUT ME"} accent={"#e6a157"} links={links}/>
-                <div className="flex flex-col md:flex-row justify-center p-6 items-center">
-                    <div className="my-2 md:mx-2 max-w-[480px] h-[380px] flex flex-col items-center text-center py-4 px-2 bg-white/10 rounded-xl text-sm">
+                <div className="flex flex-col md:flex-row justify-center px-6 pt-2 items-center">
+                    <div className="my-2 md:mx-2 w-[380px] h-[480px] flex flex-col items-center text-center py-4 px-2 bg-white/10 rounded-xl text-sm">
                         <div className="overflow-y-auto auto-scrollbar pt-2 px-4 text-white">
-                        <p className="mb-3">
+                            <p className="mb-3">
                             Hello! I'm a junior software engineer with years of professional experience crafting solutions to solve problems outside of tech. In every job, my approach has been to be as efficient as possible while still tailoring my solutions to each client. My background is primarily in the real estate and construction domains, but I am bringing the same discipline and creativity to my emerging software career.
                             <br></br>
                             <br></br>
@@ -24,7 +24,8 @@ function About () {
                             <br></br>
                             <br></br>
                             <span className="text-center">Based out of Houston, TX</span>
-                        </p>                            </div>
+                            </p>                            
+                        </div>
                         <hr className="mt-3 mb-3 text-white w-full" />
                     </div>
                 </div>
