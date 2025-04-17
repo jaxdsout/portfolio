@@ -26,7 +26,7 @@ function Tabs () {
     ]
 
     return (
-        <div className={`flex flex-col items-center justify-center z-10 h-screen transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"}`}>
+        <div className={`fixed top-0 left-0 flex flex-col items-center justify-center z-10 h-screen w-screen transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"}`}>
             <div className={`z-20 flex flex-col items-center justify-center absolute h-[11rem] w-[11rem] rounded-full drop-shadow-wedge`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)" }}>
                 <h1 
                     className={`text-[4rem] font-ralewayBlack font-black absolute`}

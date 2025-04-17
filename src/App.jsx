@@ -10,9 +10,9 @@ function App () {
 
 
     return (
-        <div className='flex flex-col items-center justify-center'>
-            <div className='flex flex-col items-center justify-center h-screen' style={{ zIndex: 4 }}> 
-            <AnimatePresence mode="wait">
+        <div className='flex flex-col items-center justify-center h-screen'>
+            <div className='flex flex-col items-center justify-center' style={{ zIndex: 4 }}> 
+                <AnimatePresence mode="wait">
 
                 <Routes location={location} key={location.pathname}>
                     <Route index element={ 
@@ -52,7 +52,7 @@ function App () {
                 </AnimatePresence>
             </div>
 
-            <div className='fixed top-0 left-0 object-cover overflow-x-hidden overflow-y-hidden'>
+            <div className='fixed top-0 left-0 object-cover'>
                 <Background />
             </div>
         </div>
