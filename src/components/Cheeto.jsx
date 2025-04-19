@@ -10,7 +10,7 @@ function Cheeto () {
     const handleInteraction = (proj) => setTouched(proj);
 
     const handleClick = (id) => {
-        setClicked(true); 
+        setClicked(id); 
         setTimeout(() => {
             navigate(id !== 4 ? `/proj/${id}` : "/about-me/");
         }, 200);
@@ -27,7 +27,7 @@ function Cheeto () {
 
     return (
         <div className={`fixed top-0 left-0 flex flex-col items-center justify-center z-10 h-screen w-screen transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"}`}>
-            <div className={`z-20 flex flex-col items-center justify-center absolute h-[11rem] w-[11rem] rounded-full drop-shadow-wedge`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)" }}>
+            <div className={`z-20 flex flex-col items-center justify-center absolute h-[11rem] w-[11rem] rounded-full drop-shadow-wedge`} style={{ backgroundColor: touched ? touched.color : "rgba(207, 83, 0, 0.3)",  transform: clicked && "translateY(-3px)" }}>
                 <h1 
                     className={`text-[4rem] font-ralewayBlack font-black absolute`}
                     style={{ color: touched ? "white" : "#e7a55e", mixBlendMode: touched ? "normal" : "lighten" }}
@@ -55,11 +55,18 @@ function Cheeto () {
                         className={`cursor-pointer animate-glow drop-shadow-wedge`}
                         style={{ 
                             animationPlayState: touched ? "paused" : "running", 
-                            transform: 
-                                index === 1 ? "rotate(45deg)" : 
-                                index === 2 ? "rotate(225deg)" :
-                                index === 3 ? "rotate(135deg)" : 
-                                "rotate(315deg)",       
+                            transform: `
+                                ${clicked === proj.id ? "translateY(-3px)" : ""}
+                                ${
+                                    index === 1
+                                    ? "rotate(45deg)"
+                                    : index === 2
+                                    ? "rotate(225deg)"
+                                    : index === 3
+                                    ? "rotate(135deg)"
+                                    : "rotate(315deg)"
+                                }
+                            `.trim(),
                         }}
                         
                     >
@@ -69,7 +76,7 @@ function Cheeto () {
                             strokeWidth="48"
                             fill="transparent"
                             strokeLinecap="round"
-                            className='drop-shadow-wedge animate-bounce'
+                            className='drop-shadow-wedge animate-bounce '
                             onMouseEnter={() => handleInteraction(proj)}
                             onMouseLeave={handleEnd}
                             onTouchStart={() => handleInteraction(proj)}

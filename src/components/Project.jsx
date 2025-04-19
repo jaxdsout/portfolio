@@ -18,7 +18,7 @@ function Project ({ title, children, links, thumbnail, accent }) {
                         />
                     </div>
                     <div className="my-2 md:mx-2 w-[320px] h-[300px] md:w-[380px] md:h-[380px] flex flex-col items-center text-center py-4 px-2 bg-black/40 rounded-xl text-sm">
-                        <div className="overflow-y-auto auto-scrollbar pt-2 px-4 text-white">
+                        <div className="overflow-y-scroll auto-scrollbar pt-2 px-4 text-white">
                             {children}
                         </div>
                         <hr className="mt-3 mb-3 text-white w-full" />
