@@ -73,7 +73,7 @@ function Content () {
             );
             break;
         case '3':
-            title = 'GALLERY';
+            title = 'THE GALLERY';
             links = ["https://gallery-site.onrender.com/", "https://github.com/jaxdsout/gallery-site"];
             thumbnail = GalleryThumb;
             accent = '#464646';

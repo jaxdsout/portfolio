@@ -13,6 +13,7 @@ module.exports = {
           "wave4": 'wave 16s ease-in-out infinite 1.5s',
           "wave5": 'wave 12s ease-in-out infinite 2s',
           "wave6": 'wave 14s ease-in-out infinite 1s',
+          "slow-fade": 'fadeIn 8s ease-in-out infinite'
         },
         fontFamily: {
           "ralewayBlack": ['Raleway-Black', 'sans-serif'],
@@ -46,10 +47,14 @@ module.exports = {
             '50%': { transform: 'translateY(10px) scale(1.1)', },
             '100%': { transform: 'translateY(0)' },
           },
+          fadeIn: {
+            '0%': { opacity: '0%'},
+            '50%': {opacity: '100%'},
+            '100%': { opacity: '0%'},
           }
         },
       },
     plugins: [],
   }
-  
+}
   

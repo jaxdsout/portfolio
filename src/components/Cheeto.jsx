@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useState, useRef } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
 
 function Cheeto () {
@@ -7,6 +8,11 @@ function Cheeto () {
     const [hovered, setHovered] = useState(null);
     const [clicked, setClicked] = useState(null);
     const touched = useRef(null);
+
+    const handleHover = (proj) => {
+        touched.current = proj;
+        setHovered(proj);
+    }
 
     const handleTouch = (proj) => {
         if (touched.current?.id === proj.id) {
@@ -17,11 +23,14 @@ function Cheeto () {
         }
     }
 
-    const handleClick = (id) => {
-        setClicked(id); 
-        setTimeout(() => {
-            navigate(id !== 4 ? `/proj/${id}` : "/about-me/");
-        }, 200);
+    const handleClick = (proj) => {
+        if (touched.current?.id === proj.id) {
+            const id = proj.id;
+            setClicked(id); 
+            setTimeout(() => {
+                navigate(id !== 4 ? `/proj/${id}` : "/about-me/");
+            }, 200)
+        }
     }
 
     const handleEnd = () => {
@@ -32,7 +41,7 @@ function Cheeto () {
     const projs = [
         {"id": 1, "name": "ATLAS", "type": "PROJ", "color": "#5F85DB"},
         {"id": 2, "name": "SUBSTREAM", "type": "PROJ", "color": "#a5d294"},
-        {"id": 3, "name": "GALLERY", "type": "PROJ", "color": "#464646"},
+        {"id": 3, "name": "THEGALLERY", "type": "PROJ", "color": "#464646"},
         {"id": 4, "name": "ABOUT ME", "type": "ABOUT", "color": "#eb8242"},
     ]
 
@@ -64,11 +73,11 @@ function Cheeto () {
                                 height="160"
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="cursor-pointer animate-glow drop-shadow-wedge"
-                                onMouseEnter={() => setHovered(proj)}
+                                onMouseEnter={() => handleHover(proj)}
                                 onMouseLeave={handleEnd}
                                 onTouchStart={() => handleTouch(proj)}
                                 onTouchEnd={handleEnd}
-                                onClick={() => handleClick(proj.id)}
+                                onClick={() => handleClick(proj)}
                                 style={{ 
                                     animationPlayState: hovered ? "paused" : "running",
                                     transform: `rotate(${rotation}deg) ${clicked === proj.id ? "translateY(-3px)" : ""}`,
@@ -84,20 +93,42 @@ function Cheeto () {
                                     className="drop-shadow-wedge animate-bounce"
                                     style={{ animationPlayState: hovered ? "paused" : "running" }}
                                 />
-                                <text
+                                {!hovered ? (
+                                    <text
                                     fill="white"
                                     fontSize="18"
                                     textAnchor="middle"
-                                    style={{ opacity: hovered?.id === proj.id ? 1 : 0, letterSpacing: "0.2em", fontWeight: "700" }}
+                                    className='animate-slow-fade opacity-100'
+                                    style={{
+                                        letterSpacing: "0.2em", fontWeight: "700" }}
                                 >
                                     <textPath 
                                         href={`#${pathId}`} 
                                         startOffset="50%"
                                         alignmentBaseline="middle"
                                     >
-                                        {hovered?.name}
+                                        {proj.name}
                                     </textPath>
                                 </text>
+                                ) : (
+                                    <text
+                                    fill="white"
+                                    fontSize="18"
+                                    textAnchor="middle"
+                                    className=''
+                                    style={{ opacity: hovered?.id === proj.id ? "100%" : '0%',
+                                        letterSpacing: "0.2em", fontWeight: "700" }}
+                                >
+                                    <textPath 
+                                        href={`#${pathId}`} 
+                                        startOffset="50%"
+                                        alignmentBaseline="middle"
+                                    >
+                                        {hovered.name}
+                                    </textPath>
+                                </text>
+                                )}
+                            
                             </svg>
                         </div>
                     )
