@@ -49,7 +49,7 @@ module.exports = {
           },
           fadeIn: {
             '0%': { opacity: '0%'},
-            '50%': {opacity: '100%'},
+            '50%': {opacity: '70%'},
             '100%': { opacity: '0%'},
           }
         },

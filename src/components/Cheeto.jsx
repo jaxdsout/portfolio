@@ -48,7 +48,7 @@ function Cheeto () {
     return (
         <div className={`fixed top-0 left-0 flex flex-col items-center justify-center z-10 h-screen w-screen transition-opacity duration-300 ${clicked ? "opacity-0" : "opacity-100"}`}>
             <h1 
-                className={`flex flex-col items-center justify-center z-20 text-[4rem] font-ralewayBlack font-black absolute h-[11rem] w-[11rem] rounded-full drop-shadow-wedge`}
+                className={`flex flex-col items-center justify-center z-20 text-[4rem] font-ralewayBlack font-black absolute h-[11rem] w-[11rem] rounded-full hover:drop-shadow-wedge`}
                 style={{ color: hovered ? "white" : "#e7a55e", mixBlendMode: hovered ? "normal" : "lighten", backgroundColor: hovered ? hovered.color : "rgba(207, 83, 0, 0.3)",  transform: clicked && "translateY(-3px)" }}
             >
                 JS
@@ -95,12 +95,14 @@ function Cheeto () {
                                 />
                                 {!hovered ? (
                                     <text
-                                    fill="white"
+                                    fill={`${hovered ? "white" : "#e7a55e"}`}
                                     fontSize="18"
                                     textAnchor="middle"
                                     className='animate-slow-fade opacity-100'
                                     style={{
-                                        letterSpacing: "0.2em", fontWeight: "700" }}
+                                        letterSpacing: "0.2em", fontWeight: "700",
+                                        mixBlendMode: hovered ? "normal" : "lighten",
+                                    }}
                                 >
                                     <textPath 
                                         href={`#${pathId}`} 
@@ -112,13 +114,15 @@ function Cheeto () {
                                 </text>
                                 ) : (
                                     <text
-                                    fill="white"
-                                    fontSize="18"
-                                    textAnchor="middle"
-                                    className=''
-                                    style={{ opacity: hovered?.id === proj.id ? "100%" : '0%',
-                                        letterSpacing: "0.2em", fontWeight: "700" }}
-                                >
+                                        fill="white"
+                                        fontSize="18"
+                                        textAnchor="middle"
+                                        className=''
+                                        style={{ 
+                                            opacity: hovered?.id === proj.id ? "100%" : '0%',
+                                            letterSpacing: "0.2em", fontWeight: "700",
+                                        }}
+                                    >
                                     <textPath 
                                         href={`#${pathId}`} 
                                         startOffset="50%"
