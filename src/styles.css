@@ -40,3 +40,21 @@ body {
   scrollbar-color: white transparent;
   scrollbar-gutter: 200px;
 }
+
+.cheeto {
+  -webkit-clip-path: path("M30 80 Q95 10 160 80");
+  clip-path: path("M30 80 Q95 10 160 80"); 
+  cursor: pointer;
+  position: relative;
+  stroke-linecap: round;
+}
+
+.wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+  text-align: center;
+}
