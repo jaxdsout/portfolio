@@ -6,7 +6,7 @@ import SubstreamThumb from "../elements/images/substream.png";
 import AtlasThumb from "../elements/images/atlas.png";
 
 
-function Content () {
+function Content() {
     const { id } = useParams();
     const [copied, setCopied] = useState(false);
 
@@ -72,29 +72,29 @@ function Content () {
                 </p>
             );
             break;
-        case '3':
-            title = 'THE GALLERY';
-            links = ["https://gallery-site.onrender.com/", "https://github.com/jaxdsout/gallery-site"];
-            thumbnail = GalleryThumb;
-            accent = '#464646';
-            content = (
-                <p className="pb-4">
-                    This project serves as both the customer-facing website and inventory system for a fictional art gallery. The backend is a custom API that manages inventory, artist information, event calendars, and bid logs. The gallery operates entirely on a bidding system, similar to eBay, but without a “Buy Now” option. As a pro-artist establishment, they aim to ensure that each piece sells for its true value. If an artwork doesn’t sell, the gallery owner or artist can decide whether to renew the listing, utilizing the optional "auto-renew" feature.
-                    <br></br>
-                    <br></br>
-                    The web app is built with React on the frontend and Django on the backend. All media was sourced from my Midjourney account, while the interface combines Tailwind CSS with select elements from Semantic UI and is serviced by an S3 bucket on AWS. The interface is a result of Tailwind and some elements of Semantic UI.
-                </p>
-            );
-            break;
+        // case '3':
+        //     title = 'THE GALLERY';
+        //     links = ["https://gallery-site.onrender.com/", "https://github.com/jaxdsout/gallery-site"];
+        //     thumbnail = GalleryThumb;
+        //     accent = '#464646';
+        //     content = (
+        //         <p className="pb-4">
+        //             This project serves as both the customer-facing website and inventory system for a fictional art gallery. The backend is a custom API that manages inventory, artist information, event calendars, and bid logs. The gallery operates entirely on a bidding system, similar to eBay, but without a “Buy Now” option. As a pro-artist establishment, they aim to ensure that each piece sells for its true value. If an artwork doesn’t sell, the gallery owner or artist can decide whether to renew the listing, utilizing the optional "auto-renew" feature.
+        //             <br></br>
+        //             <br></br>
+        //             The web app is built with React on the frontend and Django on the backend. All media was sourced from my Midjourney account, while the interface combines Tailwind CSS with select elements from Semantic UI and is serviced by an S3 bucket on AWS. The interface is a result of Tailwind and some elements of Semantic UI.
+        //         </p>
+        //     );
+        //     break;
         default:
-            links = []; 
+            links = [];
             break;
     }
 
     return (
-        <Project 
-            title={title} 
-            links={links} 
+        <Project
+            title={title}
+            links={links}
             thumbnail={thumbnail}
             accent={accent}
         >
