@@ -1,0 +1,73 @@
+.about-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-layout {
+    flex-direction: row;
+  }
+}
+
+.about-panel {
+  width: 320px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .about-panel {
+    width: 380px;
+    height: 480px;
+  }
+}
+
+.about-scroll-area {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+}
+
+.about-divider {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: white;
+  width: 100%;
+}
+
+.about-body {
+  margin-bottom: 0.75rem;
+  font-family: 'Raleway-Regular', sans-serif;
+}

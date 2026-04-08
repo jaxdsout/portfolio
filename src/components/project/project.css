@@ -1,0 +1,129 @@
+.content-body {
+  padding-bottom: 1rem;
+  font-family: 'Raleway-Regular', sans-serif;
+}
+
+.content-body--relative {
+  padding-bottom: 1rem;
+  position: relative;
+  font-family: 'Raleway-Regular', sans-serif;
+}
+
+.content-copied-toast {
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 7rem;
+  color: #fca5a5;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+/* 
+PROJECT 
+*/
+
+.project-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.project-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .project-layout {
+    flex-direction: row;
+  }
+}
+
+.project-thumbnail-wrapper {
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 1rem;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05));
+  cursor: pointer;
+  margin: 0.5rem 0;
+  transition: transform 0.15s ease-out;
+}
+
+.project-thumbnail-wrapper:active {
+  transform: translateY(1px);
+}
+
+@media (min-width: 768px) {
+  .project-thumbnail-wrapper {
+    width: 380px;
+    height: 380px;
+    margin: 0.5rem;
+  }
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.15s;
+}
+
+.project-thumbnail:hover,
+.project-thumbnail:active {
+  opacity: 0.6;
+}
+
+.project-text-panel {
+  width: 320px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .project-text-panel {
+    width: 380px;
+    height: 380px;
+    margin: 0.5rem;
+  }
+}
+
+.project-scroll-area {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+}
+
+.project-divider {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: white;
+  width: 100%;
+}

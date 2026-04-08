@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url('./assets/fonts/Raleway-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('./assets/fonts/Raleway-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('./assets/fonts/Raleway-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Thin';
+  src: url('./assets/fonts/Raleway-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Font utility classes */
+.font-raleway-black {
+  font-family: 'Raleway-Black', sans-serif;
+}
+
+.font-raleway-light {
+  font-family: 'Raleway-Light', sans-serif;
+}
+
+.font-raleway-regular {
+  font-family: 'Raleway-Regular', sans-serif;
+}
+
+.font-raleway-medium {
+  font-family: 'Raleway-Medium', sans-serif;
+}
+
+.font-raleway-thin {
+  font-family: 'Raleway-Thin', sans-serif;
+}
+
+/* Keyframes */
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0px 0px rgba(255, 255, 255, 0));
+  }
+
+  50% {
+    filter: drop-shadow(2px 2px 10px rgb(255, 208, 108));
+  }
+
+  100% {
+    filter: drop-shadow(0 0px 0px rgba(255, 255, 255, 0));
+  }
+}
+
+@keyframes spinInfinite {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bouncy {
+  0% {
+    transform: scale(0.95) translateY(0);
+  }
+
+  50% {
+    transform: scale(1.0) translateY(3px);
+  }
+
+  100% {
+    transform: scale(0.95) translateY(0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px) scale(1.1);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation classes */
+.animate-glow {
+  animation: glow 3s linear infinite;
+}
+
+.animate-spin-slow {
+  animation: spinInfinite 20s linear infinite;
+}
+
+.animate-bounce {
+  animation: bouncy 4s linear infinite;
+}
+
+.animate-wave1 {
+  animation: wave 12s ease-in-out infinite;
+}
+
+.animate-wave2 {
+  animation: wave 8s ease-in-out infinite 0.5s;
+}
+
+.animate-wave3 {
+  animation: wave 14s ease-in-out infinite 1s;
+}
+
+.animate-wave4 {
+  animation: wave 16s ease-in-out infinite 1.5s;
+}
+
+.animate-wave5 {
+  animation: wave 12s ease-in-out infinite 2s;
+}
+
+.animate-wave6 {
+  animation: wave 14s ease-in-out infinite 1s;
+}
+
+.animate-slow-fade {
+  animation: fadeIn 8s ease-in-out infinite;
+}
+
+/* Shared utilities */
+.drop-shadow-wedge {
+  filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.15));
+}
+
+.auto-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  user-select: none;
+}
