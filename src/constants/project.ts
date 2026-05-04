@@ -30,7 +30,7 @@ export const projects: Record<string, ProjectData> = {
     colorScheme: ['#0b0b0b', '#1e1e1e', '#3b383f', '#67835d', '#92c181', '#a5d294', '#000000'],
     title: 'SUBSTREAM',
     github: 'https://github.com/jaxdsout/substream',
-    deploy: 'https://substream-xmo6.onrender.com/',
+    deploy: 'https://substream-phi.vercel.app/',
     thumbnail: SubstreamThumb,
     accent: '#a5d294',
     body: [
