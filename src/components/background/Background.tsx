@@ -41,6 +41,10 @@ export default function Background(): JSX.Element {
   const blended5 = interpolateRgb(prevScheme.current[5], scheme[5])(p);
   const blended6 = interpolateRgb(prevScheme.current[6], scheme[6])(p);
 
+  useEffect(() => {
+    document.body.style.backgroundColor = blended6;
+  }, [blended6]);
+
   return (
     <motion.svg
       viewBox="0 0 900 600"
