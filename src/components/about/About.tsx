@@ -1,9 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { about } from '../../constants/about';
+import { useStore } from '../../store/store';
 import Nav from '../nav/Nav';
 import './About.css';
 
 function About(): JSX.Element {
+  const about = useStore(state => state.about)
+
   return (
     <AnimatePresence>
       <motion.div className="about-wrapper" style={{ zIndex: 4 }}>

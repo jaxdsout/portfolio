@@ -1,12 +1,17 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useParams } from 'react-router-dom';
-import { projects } from '../../constants/project';
+import { useStore } from '../../store/store';
 import Nav from '../nav/Nav';
 import './project.css';
 
+function useProject(id: string | undefined) {
+  const { projects } = useStore();
+  return id ? (projects[id] ?? null) : null;
+}
+
 function Project(): JSX.Element {
   const { id } = useParams<{ id: string }>();
-  const project = id ? projects[id] : null;
+  const project = useProject(id);
   const title = project?.title ?? '';
   const github = project?.github ?? '';
   const deploy = project?.deploy;

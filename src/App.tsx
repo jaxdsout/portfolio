@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import About from './components/about/About';
 import Cheeto from './components/cheeto/Cheeto';
 import Project from './components/project/Project';
-import Background from './components/waves/Background';
+import Background from './components/background/Background';
 
 function App(): JSX.Element {
   const location = useLocation();
@@ -50,7 +50,7 @@ function App(): JSX.Element {
         </AnimatePresence>
       </div>
 
-      <div style={{ position: 'fixed', top: 0, left: 0, zIndex: 1 }}>
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100dvh', zIndex: 1 }}>
         <Background />
       </div>
     </>

@@ -1,16 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Project } from '../../store/types';
 import './Nav.css';
 
-interface NavProps {
-  title: string;
-  accent: string;
-  github?: string;
-  deploy?: string;
-  links?: string[];
-}
-
-export default function Nav({ title, accent, github, deploy, links }: NavProps): JSX.Element {
+export default function Nav({ title, accent, github, deploy, links }: Pick<Project, 'title' | 'accent' | 'github' | 'deploy' | 'links'>): JSX.Element {
   const [hovered, setHovered] = useState<string | null>(null);
   const navigate = useNavigate();
 

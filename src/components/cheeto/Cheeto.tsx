@@ -1,40 +1,35 @@
 import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useStore } from '../../store/store';
+import { NavItem } from '../../store/types';
 import './Cheeto.css';
 
-interface Project {
-  id: number;
-  name: string;
-  type: string;
-  color: string;
-}
-
 function Cheeto(): JSX.Element {
+  const { navItems } = useStore();
   const navigate = useNavigate();
-  const [hovered, setHovered] = useState<Project | null>(null);
+  const [hovered, setHovered] = useState<NavItem | null>(null);
   const [clicked, setClicked] = useState<number | null>(null);
-  const touched = useRef<Project | null>(null);
+  const touched = useRef<NavItem | null>(null);
 
-  const handleHover = (proj: Project) => {
-    touched.current = proj;
-    setHovered(proj);
+  const handleHover = (item: NavItem) => {
+    touched.current = item;
+    setHovered(item);
   };
 
-  const handleTouch = (proj: Project) => {
-    if (touched.current?.id === proj.id) {
-      handleClick(proj);
+  const handleTouch = (item: NavItem) => {
+    if (touched.current?.id === item.id) {
+      handleClick(item);
     } else {
-      touched.current = proj;
-      setHovered(proj);
+      touched.current = item;
+      setHovered(item);
     }
   };
 
-  const handleClick = (proj: Project) => {
-    if (touched.current?.id === proj.id) {
-      const id = proj.id;
-      setClicked(id);
+  const handleClick = (item: NavItem) => {
+    if (touched.current?.id === item.id) {
+      setClicked(item.id);
       setTimeout(() => {
-        navigate(id !== 4 ? `/proj/${id}` : '/about-me/');
+        navigate(item.type !== 'ABOUT' ? `/proj/${item.id}` : '/about-me/');
       }, 200);
     }
   };
@@ -44,13 +39,6 @@ function Cheeto(): JSX.Element {
     setHovered(null);
   };
 
-  const projs: Project[] = [
-    { id: 1, name: 'ATLAS', type: 'PROJ', color: '#5F85DB' },
-    { id: 2, name: 'SUBSTREAM', type: 'PROJ', color: '#a5d294' },
-    { id: 3, name: 'THE GALLERY', type: 'PROJ', color: '#464646' },
-    { id: 4, name: 'ABOUT ME', type: 'ABOUT', color: '#eb8242' },
-  ];
-
   return (
     <div className={`cheeto-root ${clicked ? 'cheeto-root--clicked' : 'cheeto-root--visible'}`}>
       <h1
@@ -58,7 +46,7 @@ function Cheeto(): JSX.Element {
         style={{
           color: hovered ? 'white' : '#e7a55e',
           mixBlendMode: hovered ? 'normal' : 'lighten',
-          backgroundColor: hovered ? hovered.color : 'rgba(207, 83, 0, 0.3)',
+          backgroundColor: hovered ? hovered.accent : 'rgba(207, 83, 0, 0.3)',
           transform: clicked ? 'translateY(-3px)' : undefined,
         }}
       >
@@ -69,36 +57,36 @@ function Cheeto(): JSX.Element {
         className="cheeto-grid animate-spin-slow"
         style={{ animationPlayState: hovered ? 'paused' : 'running' }}
       >
-        {projs.map((proj, index) => {
+        {navItems.map((item, index) => {
           const rotation =
             index === 0 ? 315 :
-            index === 1 ? 45 :
-            index === 2 ? 225 :
-            135;
+              index === 1 ? 45 :
+                index === 2 ? 225 :
+                  135;
 
-          const pathId = `curve-${proj.id}`;
+          const pathId = `curve-${item.id}`;
 
           return (
-            <div key={proj.id} className="cheeto-tile">
+            <div key={item.id} className="cheeto-tile">
               <svg
                 width="190"
                 height="160"
                 xmlns="http://www.w3.org/2000/svg"
                 className="cheeto-svg animate-glow drop-shadow-wedge"
-                onMouseEnter={() => handleHover(proj)}
+                onMouseEnter={() => handleHover(item)}
                 onMouseLeave={handleEnd}
-                onTouchStart={() => handleTouch(proj)}
+                onTouchStart={() => handleTouch(item)}
                 onTouchEnd={handleEnd}
-                onClick={() => handleClick(proj)}
+                onClick={() => handleClick(item)}
                 style={{
                   animationPlayState: hovered ? 'paused' : 'running',
-                  transform: `rotate(${rotation}deg)${clicked === proj.id ? ' translateY(-3px)' : ''}`,
+                  transform: `rotate(${rotation}deg)${clicked === item.id ? ' translateY(-3px)' : ''}`,
                 }}
               >
                 <path
                   d="M 30 80 Q 95 10 160 80 M"
                   id={pathId}
-                  stroke={hovered?.id === proj.id ? proj.color : 'rgba(207, 83, 0, 0.3)'}
+                  stroke={hovered?.id === item.id ? item.accent : 'rgba(207, 83, 0, 0.3)'}
                   strokeWidth="48"
                   fill="transparent"
                   strokeLinecap="round"
@@ -108,13 +96,13 @@ function Cheeto(): JSX.Element {
                 {!hovered ? (
                   <text
                     fill="#e7a55e"
-                    fontSize="18"
+                    fontSize="15"
                     textAnchor="middle"
                     className="animate-slow-fade"
                     style={{
                       letterSpacing: '0.2em',
                       fontWeight: '700',
-                      fontFamily: 'Raleway-Black, sans-serif',
+                      fontFamily: 'Raleway, sans-serif',
                       mixBlendMode: 'lighten',
                     }}
                   >
@@ -123,19 +111,19 @@ function Cheeto(): JSX.Element {
                       startOffset="50%"
                       alignmentBaseline="middle"
                     >
-                      {proj.name}
+                      {item.title}
                     </textPath>
                   </text>
                 ) : (
                   <text
                     fill="white"
-                    fontSize="18"
+                    fontSize="15"
                     textAnchor="middle"
                     style={{
-                      opacity: hovered?.id === proj.id ? 1 : 0,
+                      opacity: hovered?.id === item.id ? 1 : 0,
                       letterSpacing: '0.2em',
                       fontWeight: '700',
-                      fontFamily: 'Raleway-Black, sans-serif',
+                      fontFamily: 'Raleway, sans-serif',
                     }}
                   >
                     <textPath
@@ -143,7 +131,7 @@ function Cheeto(): JSX.Element {
                       startOffset="50%"
                       alignmentBaseline="middle"
                     >
-                      {hovered.name}
+                      {hovered.title}
                     </textPath>
                   </text>
                 )}

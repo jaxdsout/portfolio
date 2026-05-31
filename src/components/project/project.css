@@ -1,12 +1,12 @@
 .content-body {
   padding-bottom: 1rem;
-  font-family: 'Raleway-Regular', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .content-body--relative {
   padding-bottom: 1rem;
   position: relative;
-  font-family: 'Raleway-Regular', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .content-copied-toast {

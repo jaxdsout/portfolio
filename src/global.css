@@ -1,57 +1,27 @@
-@font-face {
-  font-family: 'Raleway-Black';
-  src: url('./assets/fonts/Raleway-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway-Light';
-  src: url('./assets/fonts/Raleway-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway-Regular';
-  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway-Medium';
-  src: url('./assets/fonts/Raleway-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway-Thin';
-  src: url('./assets/fonts/Raleway-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
 /* Font utility classes */
 .font-raleway-black {
-  font-family: 'Raleway-Black', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
 }
 
 .font-raleway-light {
-  font-family: 'Raleway-Light', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
 .font-raleway-regular {
-  font-family: 'Raleway-Regular', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 .font-raleway-medium {
-  font-family: 'Raleway-Medium', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 
 .font-raleway-thin {
-  font-family: 'Raleway-Thin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
 }
 
 /* Keyframes */
