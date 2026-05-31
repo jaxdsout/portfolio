@@ -1,0 +1,14 @@
+.bg-svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .bg-svg {
+    height: -webkit-fill-available;
+  }
+}
